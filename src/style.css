@@ -227,6 +227,7 @@ button {
 }
 .answer-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.6rem;
 }
 .btn {
@@ -242,7 +243,7 @@ button {
   cursor: pointer;
 }
 .btn.primary {
-  flex: 1;
+  flex: 1 1 8rem;
   background: var(--coral);
   color: #fff;
 }

@@ -7,6 +7,7 @@ import { startDictation, voiceInputSupported } from '../speech';
 export interface AnswerInputHandlers {
   onSubmit: (text: string) => void;
   onSkip: () => void;
+  onShare?: (text: string) => void;
 }
 
 export function renderAnswerInput(handlers: AnswerInputHandlers): HTMLElement {
@@ -28,6 +29,13 @@ export function renderAnswerInput(handlers: AnswerInputHandlers): HTMLElement {
   skip.addEventListener('click', () => handlers.onSkip());
 
   row.append(submit, skip);
+
+  if (handlers.onShare) {
+    const share = el('button', 'btn ghost', '⤴ Share');
+    share.type = 'button';
+    share.addEventListener('click', () => handlers.onShare?.(textarea.value));
+    row.appendChild(share);
+  }
 
   if (voiceInputSupported()) {
     const mic = el('button', 'btn mic', '🎤');

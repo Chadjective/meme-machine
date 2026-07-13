@@ -4,7 +4,10 @@
 
 import { corpus } from './lib/corpus';
 import { createGenerator } from './lib/generator';
+import { cryptoSeededRng } from './lib/rng';
+import { formatResonance, resonance, verdict } from './lib/analytics';
 import { incrementQuestionCount, saveAnswer } from './storage';
+import { shareTranscript } from './share';
 import { cancelSpeech } from './tts';
 import { el } from './ui/dom';
 import { renderHeader } from './ui/header';
@@ -33,6 +36,14 @@ export function initApp(): void {
     current = generator.next();
     header.setCount(incrementQuestionCount());
 
+    // Compute the fake "Semantic Resonance" once per question (spec 02 §7) so the
+    // share card is stable no matter how many times it's shared.
+    const rng = cryptoSeededRng();
+    const resonanceValue = resonance(current.score, rng);
+    const resonanceText = formatResonance(resonanceValue);
+    const verdictLine = verdict(resonanceValue, rng);
+    const questionText = current.text;
+
     const frame = el('div', 'frame');
     frame.appendChild(renderQuestionCard(current));
     frame.appendChild(
@@ -42,6 +53,9 @@ export function initApp(): void {
           advance();
         },
         onSkip: advance,
+        onShare: (text) => {
+          void shareTranscript({ question: questionText, answer: text, resonanceText, verdictLine });
+        },
       })
     );
     stage.replaceChildren(frame);
