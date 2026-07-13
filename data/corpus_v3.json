@@ -4398,7 +4398,7 @@
     {
       "id": "t16",
       "type": "philosophical",
-      "template": "Why do you believe [MODIFIER] [NOUN] exists?",
+      "template": "Why do you believe in [MODIFIER] [NOUN]?",
       "mood": "Ontological, deep"
     },
     {
@@ -4410,7 +4410,7 @@
     {
       "id": "t18",
       "type": "philosophical",
-      "template": "How has [MODIFIER] [NOUN] changed the way you [VERB:base]?",
+      "template": "How did [MODIFIER] [NOUN] change the way you [VERB:base]?",
       "mood": "Transformative, growth"
     },
     {
@@ -4440,7 +4440,7 @@
     {
       "id": "t23",
       "type": "declarative",
-      "template": "[MODIFIER] [NOUN] is just [VERB:ger] with extra steps.",
+      "template": "[MODIFIER] [NOUN] — just [VERB:ger] with extra steps.",
       "mood": "Reductive, cynical-comic"
     },
     {
