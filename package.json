@@ -1,0 +1,17 @@
+{
+  "name": "meme-machine",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "A satirical interview-question generator that collides vocabulary from incompatible registers.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "build:corpus": "node scripts/build-corpus.mjs"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1"
+  }
+}

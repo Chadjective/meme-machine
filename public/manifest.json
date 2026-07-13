@@ -1,0 +1,16 @@
+{
+  "id": "/meme-machine/",
+  "name": "Meme Machine",
+  "short_name": "MemeMachine",
+  "description": "A satirical interview-question generator that collides vocabulary from incompatible registers. Secretly a vocabulary trainer.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0a0f",
+  "theme_color": "#e94560",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

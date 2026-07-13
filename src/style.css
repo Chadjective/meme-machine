@@ -1,0 +1,117 @@
+/*
+ * Meme Machine — global styles.
+ * Palette and type carried over from the original brief so Stages 2–5 inherit
+ * the same design tokens. Dark gradient, coral primary, register accents.
+ */
+:root {
+  --bg-0: #0a0a0f;
+  --bg-1: #1a1a2e;
+  --bg-2: #0f0f1a;
+  --coral: #e94560; /* verbs / primary */
+  --purple: #7b68ee; /* modifiers */
+  --cyan: #00d9ff; /* nouns */
+  --gold: #ffd700; /* highlight */
+  --ink: #e8e8f0;
+  --muted: #8a8aa0;
+
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 800px at 50% -10%, rgba(123, 104, 238, 0.14), transparent 60%),
+    linear-gradient(160deg, var(--bg-0), var(--bg-1) 55%, var(--bg-2));
+  font-family: 'Space Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+}
+
+.shell {
+  max-width: 34rem;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 1.75rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.wordmark {
+  margin: 0;
+  font-size: clamp(3rem, 15vw, 6.5rem);
+  line-height: 0.9;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  background: linear-gradient(120deg, var(--coral), var(--purple) 52%, var(--cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.tagline {
+  margin: 1.5rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.status {
+  margin: 2.75rem 0 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.5rem 1.05rem;
+  border: 1px solid rgba(233, 69, 96, 0.35);
+  border-radius: 999px;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--coral);
+  box-shadow: 0 0 0 0 rgba(233, 69, 96, 0.6);
+  animation: pulse 2.4s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(233, 69, 96, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 0.6rem rgba(233, 69, 96, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(233, 69, 96, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dot {
+    animation: none;
+  }
+}

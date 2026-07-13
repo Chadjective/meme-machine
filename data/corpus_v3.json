@@ -1,0 +1,4648 @@
+{
+  "version": "3.0",
+  "builtFrom": [
+    "vocabulary_v2.json",
+    "enrichment_v1.json"
+  ],
+  "families": [
+    "tech",
+    "corporate",
+    "science",
+    "cosmic",
+    "mystic",
+    "psyche",
+    "meaning",
+    "internet",
+    "contemplative",
+    "indigenous"
+  ],
+  "verbs": {
+    "process": {
+      "family": "tech",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "optimizing",
+          "def": "Making as effective as possible",
+          "syllables": 4,
+          "energy": "Efficiency-focused, clinical",
+          "usage": "optimizing Byzantine protocols",
+          "base": "optimize"
+        },
+        {
+          "word": "parsing",
+          "def": "Breaking down into components for analysis",
+          "syllables": 2,
+          "energy": "Analytical, dissecting",
+          "usage": "parsing Hermetic transmissions",
+          "base": "parse"
+        },
+        {
+          "word": "indexing",
+          "def": "Creating a reference system for retrieval",
+          "syllables": 3,
+          "energy": "Organizational, cataloging",
+          "usage": "indexing celestial phenomena",
+          "base": "index"
+        },
+        {
+          "word": "instantiating",
+          "def": "Creating a specific instance of an abstract concept",
+          "syllables": 4,
+          "energy": "Manifesting, concretizing",
+          "usage": "instantiating quantum narratives",
+          "base": "instantiate"
+        },
+        {
+          "word": "amortizing",
+          "def": "Spreading costs/effects over time",
+          "syllables": 4,
+          "energy": "Financial, gradual distribution",
+          "usage": "amortizing prophetic debt",
+          "base": "amortize"
+        },
+        {
+          "word": "tokenizing",
+          "def": "Converting into discrete symbolic units",
+          "syllables": 4,
+          "energy": "Fragmenting, encoding",
+          "usage": "tokenizing ancestral memory",
+          "base": "tokenize"
+        },
+        {
+          "word": "forking",
+          "def": "Splitting into parallel versions",
+          "syllables": 2,
+          "energy": "Diverging, multiplying paths",
+          "usage": "forking dialectical timelines",
+          "base": "fork"
+        },
+        {
+          "word": "pruning",
+          "def": "Removing unnecessary elements",
+          "syllables": 2,
+          "energy": "Refining, trimming",
+          "usage": "pruning stochastic branches",
+          "base": "prune"
+        },
+        {
+          "word": "hashing",
+          "def": "Converting data into fixed-length codes",
+          "syllables": 2,
+          "energy": "Compressing, fingerprinting",
+          "usage": "hashing Sumerian receipts",
+          "base": "hash"
+        },
+        {
+          "word": "compiling",
+          "def": "Assembling from components into whole",
+          "syllables": 3,
+          "energy": "Building, translating",
+          "usage": "compiling ley-line coordinates",
+          "base": "compile"
+        },
+        {
+          "word": "deprecating",
+          "def": "Phasing out, marking as obsolete",
+          "syllables": 4,
+          "energy": "Sunsetting, retiring",
+          "usage": "deprecating Ptolemaic assumptions",
+          "base": "deprecate"
+        },
+        {
+          "word": "serializing",
+          "def": "Converting to sequential format",
+          "syllables": 4,
+          "energy": "Linearizing, ordering",
+          "usage": "serializing prophetic visions",
+          "base": "serialize"
+        },
+        {
+          "word": "scaffolding",
+          "def": "Building temporary support structures",
+          "syllables": 3,
+          "energy": "Staging, enabling",
+          "usage": "scaffolding emergent ontologies",
+          "base": "scaffold"
+        },
+        {
+          "word": "throttling",
+          "def": "Limiting the rate of flow",
+          "syllables": 2,
+          "energy": "Constraining, metering",
+          "usage": "throttling astral bandwidth",
+          "base": "throttle"
+        },
+        {
+          "word": "sharding",
+          "def": "Splitting into parallel processing pieces",
+          "syllables": 2,
+          "energy": "Distributing, fragmenting",
+          "usage": "sharding collective memory",
+          "base": "shard"
+        },
+        {
+          "word": "caching",
+          "def": "Storing for quick future retrieval",
+          "syllables": 2,
+          "base": "cache"
+        },
+        {
+          "word": "validating",
+          "def": "Confirming correctness or legitimacy",
+          "syllables": 4,
+          "base": "validate"
+        },
+        {
+          "word": "iterating",
+          "def": "Repeating with incremental changes",
+          "syllables": 4,
+          "base": "iterate"
+        },
+        {
+          "word": "bootstrapping",
+          "def": "Starting with minimal resources",
+          "syllables": 3,
+          "base": "bootstrap"
+        },
+        {
+          "word": "debugging",
+          "def": "Finding and fixing errors",
+          "syllables": 3,
+          "base": "debug"
+        }
+      ]
+    },
+    "movement": {
+      "family": "science",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "hovering",
+          "def": "Remaining suspended between states",
+          "syllables": 3,
+          "energy": "Liminal, between states",
+          "usage": "hovering above eigenvalue thresholds",
+          "base": "hover"
+        },
+        {
+          "word": "oscillating",
+          "def": "Moving back and forth rhythmically",
+          "syllables": 4,
+          "energy": "Pendular, uncertain",
+          "usage": "oscillating between paradigms",
+          "base": "oscillate"
+        },
+        {
+          "word": "cascading",
+          "def": "Falling in stages, triggering sequences",
+          "syllables": 3,
+          "energy": "Waterfall effect, chain reaction",
+          "usage": "cascading through manifolds",
+          "base": "cascade"
+        },
+        {
+          "word": "orbiting",
+          "def": "Moving in circular paths around a center",
+          "syllables": 3,
+          "energy": "Gravitational, cyclical",
+          "usage": "orbiting consensus mechanisms",
+          "base": "orbit"
+        },
+        {
+          "word": "tessellating",
+          "def": "Arranging in repeating geometric patterns",
+          "syllables": 4,
+          "energy": "Tiling, interlocking",
+          "usage": "tessellating fractal governance",
+          "base": "tessellate"
+        },
+        {
+          "word": "refracting",
+          "def": "Bending as it passes through medium",
+          "syllables": 3,
+          "energy": "Perspective-shifting, prismatic",
+          "usage": "refracting stakeholder light",
+          "base": "refract"
+        },
+        {
+          "word": "precipitating",
+          "def": "Causing to fall out of solution",
+          "syllables": 5,
+          "energy": "Triggering, crystallizing out",
+          "usage": "precipitating market phenomena",
+          "base": "precipitate"
+        },
+        {
+          "word": "percolating",
+          "def": "Filtering through gradually",
+          "syllables": 4,
+          "energy": "Seeping, slow diffusion",
+          "usage": "percolating through hierarchies",
+          "base": "percolate"
+        },
+        {
+          "word": "dilating",
+          "def": "Expanding, widening",
+          "syllables": 3,
+          "energy": "Opening, increasing",
+          "usage": "dilating temporal apertures",
+          "base": "dilate"
+        },
+        {
+          "word": "converging",
+          "def": "Coming together toward a point",
+          "syllables": 3,
+          "energy": "Focusing, unifying",
+          "usage": "converging on Byzantine consensus",
+          "base": "converge"
+        },
+        {
+          "word": "diffracting",
+          "def": "Spreading out after passing through opening",
+          "syllables": 3,
+          "energy": "Scattering, wave-bending",
+          "usage": "diffracting through regulatory membranes",
+          "base": "diffract"
+        },
+        {
+          "word": "spiraling",
+          "def": "Moving in continuous curves around a point",
+          "syllables": 3,
+          "energy": "Helical, evolutionary",
+          "usage": "spiraling through funding rounds",
+          "base": "spiral"
+        },
+        {
+          "word": "undulating",
+          "def": "Moving in waves",
+          "syllables": 4,
+          "energy": "Rhythmic, flowing",
+          "usage": "undulating across liquidity pools",
+          "base": "undulate"
+        },
+        {
+          "word": "coalescing",
+          "def": "Coming together to form one mass",
+          "syllables": 3,
+          "energy": "Merging, unifying",
+          "usage": "coalescing into governance tokens",
+          "base": "coalesce"
+        },
+        {
+          "word": "bifurcating",
+          "def": "Dividing into two branches",
+          "syllables": 4,
+          "energy": "Splitting, forking",
+          "usage": "bifurcating at decision nodes",
+          "base": "bifurcate"
+        },
+        {
+          "word": "migrating",
+          "def": "Moving from one place to another",
+          "syllables": 3,
+          "base": "migrate"
+        },
+        {
+          "word": "accreting",
+          "def": "Growing by gradual accumulation",
+          "syllables": 3,
+          "base": "accrete"
+        },
+        {
+          "word": "ebbing",
+          "def": "Flowing back, receding",
+          "syllables": 2,
+          "base": "ebb"
+        },
+        {
+          "word": "surging",
+          "def": "Moving forward powerfully",
+          "syllables": 2,
+          "base": "surge"
+        },
+        {
+          "word": "drifting",
+          "def": "Moving slowly without direction",
+          "syllables": 2,
+          "base": "drift"
+        }
+      ]
+    },
+    "perception": {
+      "family": "contemplative",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "discerning",
+          "def": "Perceiving distinctions with insight",
+          "syllables": 3,
+          "energy": "Discriminating, wise seeing",
+          "usage": "discerning topological truths",
+          "base": "discern"
+        },
+        {
+          "word": "intuiting",
+          "def": "Knowing without conscious reasoning",
+          "syllables": 3,
+          "energy": "Direct apprehension, gut feeling",
+          "usage": "intuiting market sentiment",
+          "base": "intuit"
+        },
+        {
+          "word": "apprehending",
+          "def": "Grasping mentally, understanding",
+          "syllables": 4,
+          "energy": "Capturing, comprehending",
+          "usage": "apprehending Hermetic principles",
+          "base": "apprehend"
+        },
+        {
+          "word": "beholding",
+          "def": "Observing with attention and wonder",
+          "syllables": 3,
+          "energy": "Witnessing, regarding",
+          "usage": "beholding recursive architectures",
+          "base": "behold"
+        },
+        {
+          "word": "presencing",
+          "def": "Making present, bringing into awareness",
+          "syllables": 3,
+          "energy": "Manifesting attention",
+          "usage": "presencing ancestral algorithms",
+          "base": "presence"
+        },
+        {
+          "word": "contemplating",
+          "def": "Considering deeply and at length",
+          "syllables": 4,
+          "energy": "Meditative, reflective",
+          "usage": "contemplating non-Euclidean returns",
+          "base": "contemplate"
+        },
+        {
+          "word": "disclosing",
+          "def": "Revealing, making known",
+          "syllables": 3,
+          "energy": "Unveiling, uncovering",
+          "usage": "disclosing hidden correlations",
+          "base": "disclose"
+        },
+        {
+          "word": "attuning",
+          "def": "Bringing into harmony, adjusting sensitivity",
+          "syllables": 3,
+          "energy": "Calibrating, resonating",
+          "usage": "attuning to geomagnetic shifts",
+          "base": "attune"
+        },
+        {
+          "word": "registering",
+          "def": "Recording, noting with awareness",
+          "syllables": 4,
+          "energy": "Detecting, acknowledging",
+          "usage": "registering seismic sentiment",
+          "base": "register"
+        },
+        {
+          "word": "grokking",
+          "def": "Understanding intuitively and completely",
+          "syllables": 2,
+          "energy": "Deep comprehension, full absorption",
+          "usage": "grokking consensus dynamics",
+          "base": "grok"
+        },
+        {
+          "word": "scrying",
+          "def": "Perceiving through mystical means",
+          "syllables": 1,
+          "energy": "Divining, gazing",
+          "usage": "scrying liquidity futures",
+          "base": "scry"
+        },
+        {
+          "word": "channeling",
+          "def": "Serving as medium for transmission",
+          "syllables": 3,
+          "energy": "Conducting, transmitting",
+          "usage": "channeling Delphic volatility",
+          "base": "channel"
+        },
+        {
+          "word": "witnessing",
+          "def": "Observing as testimony",
+          "syllables": 3,
+          "energy": "Attesting, being present to",
+          "usage": "witnessing paradigm collapse",
+          "base": "witness"
+        },
+        {
+          "word": "invoking",
+          "def": "Calling forth, summoning",
+          "syllables": 3,
+          "energy": "Conjuring, appealing to",
+          "usage": "invoking Hamiltonian symmetries",
+          "base": "invoke"
+        },
+        {
+          "word": "divining",
+          "def": "Discovering through intuition",
+          "syllables": 3,
+          "energy": "Prophesying, sensing",
+          "usage": "divining regulatory weather",
+          "base": "divine"
+        },
+        {
+          "word": "decoding",
+          "def": "Converting from encoded form to meaning",
+          "syllables": 3,
+          "base": "decode"
+        },
+        {
+          "word": "sensing",
+          "def": "Detecting through perception",
+          "syllables": 2,
+          "weak": true,
+          "base": "sense"
+        },
+        {
+          "word": "recognizing",
+          "def": "Identifying from prior knowledge",
+          "syllables": 4,
+          "base": "recognize"
+        },
+        {
+          "word": "interpreting",
+          "def": "Explaining the meaning of",
+          "syllables": 4,
+          "base": "interpret"
+        },
+        {
+          "word": "surveying",
+          "def": "Examining comprehensively",
+          "syllables": 2,
+          "base": "survey"
+        }
+      ]
+    },
+    "transformation": {
+      "family": "science",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "sublimating",
+          "def": "Transitioning directly from solid to gas",
+          "syllables": 4,
+          "energy": "Bypassing intermediate states",
+          "usage": "sublimating bureaucratic residue",
+          "base": "sublimate"
+        },
+        {
+          "word": "crystallizing",
+          "def": "Forming into organized solid structure",
+          "syllables": 4,
+          "energy": "Solidifying, clarifying",
+          "usage": "crystallizing governance frameworks",
+          "base": "crystallize"
+        },
+        {
+          "word": "decanting",
+          "def": "Pouring off, separating by settling",
+          "syllables": 3,
+          "energy": "Filtering, purifying",
+          "usage": "decanting legacy protocols",
+          "base": "decant"
+        },
+        {
+          "word": "transmuting",
+          "def": "Changing from one form to another",
+          "syllables": 3,
+          "energy": "Alchemical transformation",
+          "usage": "transmuting attention into value",
+          "base": "transmute"
+        },
+        {
+          "word": "metabolizing",
+          "def": "Processing and converting for use",
+          "syllables": 5,
+          "energy": "Digesting, assimilating",
+          "usage": "metabolizing market signals",
+          "base": "metabolize"
+        },
+        {
+          "word": "calcifying",
+          "def": "Hardening, becoming rigid",
+          "syllables": 3,
+          "energy": "Ossifying, fixing",
+          "usage": "calcifying temporary measures",
+          "base": "calcify"
+        },
+        {
+          "word": "liquefying",
+          "def": "Converting to liquid state",
+          "syllables": 3,
+          "energy": "Melting, making fluid",
+          "usage": "liquefying illiquid positions",
+          "base": "liquefy"
+        },
+        {
+          "word": "catalyzing",
+          "def": "Accelerating reaction without being consumed",
+          "syllables": 4,
+          "energy": "Triggering, enabling",
+          "usage": "catalyzing network effects",
+          "base": "catalyze"
+        },
+        {
+          "word": "synthesizing",
+          "def": "Combining into coherent whole",
+          "syllables": 4,
+          "energy": "Integrating, merging",
+          "usage": "synthesizing cross-chain narratives",
+          "base": "synthesize"
+        },
+        {
+          "word": "fermenting",
+          "def": "Transforming through controlled breakdown",
+          "syllables": 3,
+          "energy": "Cultivating, developing slowly",
+          "usage": "fermenting community consensus",
+          "base": "ferment"
+        },
+        {
+          "word": "distilling",
+          "def": "Purifying through evaporation and condensation",
+          "syllables": 3,
+          "energy": "Extracting essence",
+          "usage": "distilling signal from noise",
+          "base": "distill"
+        },
+        {
+          "word": "oxidizing",
+          "def": "Combining with oxygen, degrading",
+          "syllables": 4,
+          "energy": "Corroding, aging",
+          "usage": "oxidizing first-mover advantage",
+          "base": "oxidize"
+        },
+        {
+          "word": "ionizing",
+          "def": "Converting to charged particles",
+          "syllables": 3,
+          "energy": "Energizing, activating",
+          "usage": "ionizing dormant capital",
+          "base": "ionize"
+        },
+        {
+          "word": "polymerizing",
+          "def": "Linking small units into chains",
+          "syllables": 5,
+          "energy": "Chaining, connecting",
+          "usage": "polymerizing micro-interactions",
+          "base": "polymerize"
+        },
+        {
+          "word": "annealing",
+          "def": "Heating and slow cooling to remove stress",
+          "syllables": 3,
+          "energy": "Tempering, strengthening",
+          "usage": "annealing organizational trauma",
+          "base": "anneal"
+        },
+        {
+          "word": "calcining",
+          "def": "Heating to powder, purifying by fire",
+          "syllables": 3,
+          "base": "calcine"
+        },
+        {
+          "word": "coagulating",
+          "def": "Thickening from liquid to solid",
+          "syllables": 4,
+          "base": "coagulate"
+        },
+        {
+          "word": "dissolving",
+          "def": "Breaking down into solution",
+          "syllables": 3,
+          "base": "dissolve"
+        },
+        {
+          "word": "mutating",
+          "def": "Changing in fundamental structure",
+          "syllables": 3,
+          "base": "mutate"
+        },
+        {
+          "word": "adapting",
+          "def": "Modifying to fit environment",
+          "syllables": 3,
+          "weak": true,
+          "base": "adapt"
+        }
+      ]
+    },
+    "alchemical": {
+      "family": "mystic",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "purifying",
+          "def": "Removing impurities to reach essence",
+          "syllables": 3,
+          "base": "purify"
+        },
+        {
+          "word": "conjoining",
+          "def": "Bringing opposites together in union",
+          "syllables": 3,
+          "base": "conjoin"
+        },
+        {
+          "word": "separating",
+          "def": "Dividing into constituent parts",
+          "syllables": 4,
+          "weak": true,
+          "base": "separate"
+        },
+        {
+          "word": "mortifying",
+          "def": "Killing the old form to enable rebirth",
+          "syllables": 3,
+          "base": "mortify"
+        },
+        {
+          "word": "vivifying",
+          "def": "Bringing to life, animating",
+          "syllables": 3,
+          "base": "vivify"
+        },
+        {
+          "word": "fixating",
+          "def": "Making stable and permanent",
+          "syllables": 3,
+          "base": "fixate"
+        },
+        {
+          "word": "volatilizing",
+          "def": "Making gaseous, releasing",
+          "syllables": 5,
+          "base": "volatilize"
+        },
+        {
+          "word": "multiplying",
+          "def": "Increasing potency exponentially",
+          "syllables": 3,
+          "weak": true,
+          "base": "multiply"
+        },
+        {
+          "word": "projecting",
+          "def": "Casting the stone to transform base matter",
+          "syllables": 3,
+          "weak": true,
+          "base": "project"
+        },
+        {
+          "word": "tincturing",
+          "def": "Extracting and applying essence",
+          "syllables": 3,
+          "base": "tincture"
+        }
+      ]
+    },
+    "semiotic": {
+      "family": "meaning",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "signifying",
+          "def": "Acting as a sign pointing to meaning",
+          "syllables": 3,
+          "base": "signify"
+        },
+        {
+          "word": "encoding",
+          "def": "Converting meaning into signs",
+          "syllables": 3,
+          "base": "encode"
+        },
+        {
+          "word": "connoting",
+          "def": "Suggesting meaning beyond literal",
+          "syllables": 3,
+          "base": "connote"
+        },
+        {
+          "word": "denoting",
+          "def": "Pointing to literal meaning",
+          "syllables": 3,
+          "base": "denote"
+        },
+        {
+          "word": "symbolizing",
+          "def": "Representing through arbitrary signs",
+          "syllables": 4,
+          "base": "symbolize"
+        },
+        {
+          "word": "glossing",
+          "def": "Providing interpretive explanation",
+          "syllables": 2,
+          "base": "gloss"
+        },
+        {
+          "word": "interpolating",
+          "def": "Inserting between existing elements",
+          "syllables": 5,
+          "base": "interpolate"
+        },
+        {
+          "word": "framing",
+          "def": "Establishing context for interpretation",
+          "syllables": 2,
+          "weak": true,
+          "base": "frame"
+        },
+        {
+          "word": "referencing",
+          "def": "Pointing to other texts or meanings",
+          "syllables": 4,
+          "base": "reference"
+        },
+        {
+          "word": "contextualizing",
+          "def": "Placing within interpretive frame",
+          "syllables": 5,
+          "base": "contextualize"
+        }
+      ]
+    },
+    "evolutionary": {
+      "family": "science",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "selecting",
+          "def": "Choosing based on fitness criteria",
+          "syllables": 3,
+          "base": "select"
+        },
+        {
+          "word": "speciating",
+          "def": "Splitting into distinct species",
+          "syllables": 3,
+          "base": "speciate"
+        },
+        {
+          "word": "radiating",
+          "def": "Rapidly diversifying into niches",
+          "syllables": 3,
+          "base": "radiate"
+        },
+        {
+          "word": "extincting",
+          "def": "Dying out completely",
+          "syllables": 3,
+          "base": "extinct"
+        },
+        {
+          "word": "co-evolving",
+          "def": "Evolving together in response to each other",
+          "syllables": 4,
+          "base": "co-evolve"
+        },
+        {
+          "word": "regressing",
+          "def": "Returning to earlier form",
+          "syllables": 3,
+          "base": "regress"
+        },
+        {
+          "word": "diverging",
+          "def": "Evolving away from common ancestor",
+          "syllables": 3,
+          "base": "diverge"
+        },
+        {
+          "word": "competing",
+          "def": "Struggling for limited resources",
+          "syllables": 3,
+          "weak": true,
+          "base": "compete"
+        },
+        {
+          "word": "symbioting",
+          "def": "Living in mutual benefit",
+          "syllables": 3,
+          "base": "symbiote"
+        },
+        {
+          "word": "proliferating",
+          "def": "Spreading rapidly",
+          "syllables": 5,
+          "base": "proliferate"
+        }
+      ]
+    },
+    "startup": {
+      "family": "corporate",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "pivoting",
+          "def": "Fundamentally changing direction",
+          "syllables": 3,
+          "base": "pivot"
+        },
+        {
+          "word": "scaling",
+          "def": "Growing rapidly while maintaining efficiency",
+          "syllables": 2,
+          "base": "scale"
+        },
+        {
+          "word": "disrupting",
+          "def": "Overturning established patterns",
+          "syllables": 3,
+          "base": "disrupt"
+        },
+        {
+          "word": "shipping",
+          "def": "Releasing product to users",
+          "syllables": 2,
+          "base": "ship"
+        },
+        {
+          "word": "grinding",
+          "def": "Working persistently through difficulty",
+          "syllables": 2,
+          "base": "grind"
+        },
+        {
+          "word": "fundraising",
+          "def": "Seeking investment capital",
+          "syllables": 3,
+          "base": "fundraise"
+        },
+        {
+          "word": "acqui-hiring",
+          "def": "Buying company for its team",
+          "syllables": 4,
+          "base": "acqui-hire"
+        },
+        {
+          "word": "sunsetting",
+          "def": "Phasing out a product or feature",
+          "syllables": 3,
+          "base": "sunset"
+        },
+        {
+          "word": "growth-hacking",
+          "def": "Acquiring users through clever tactics",
+          "syllables": 3,
+          "base": "growth-hack"
+        },
+        {
+          "word": "monetizing",
+          "def": "Converting to revenue",
+          "syllables": 4,
+          "base": "monetize"
+        }
+      ]
+    },
+    "selfHelp": {
+      "family": "psyche",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "manifesting",
+          "def": "Bringing into reality through intention",
+          "syllables": 4,
+          "base": "manifest"
+        },
+        {
+          "word": "actualizing",
+          "def": "Realizing full potential",
+          "syllables": 4,
+          "base": "actualize"
+        },
+        {
+          "word": "integrating",
+          "def": "Incorporating disowned parts",
+          "syllables": 4,
+          "base": "integrate"
+        },
+        {
+          "word": "grounding",
+          "def": "Connecting to body and earth",
+          "syllables": 2,
+          "base": "ground"
+        },
+        {
+          "word": "embodying",
+          "def": "Expressing through physical form",
+          "syllables": 3,
+          "base": "embody"
+        },
+        {
+          "word": "aligning",
+          "def": "Bringing into harmony with purpose",
+          "syllables": 3,
+          "base": "align"
+        },
+        {
+          "word": "surrendering",
+          "def": "Releasing control and resistance",
+          "syllables": 4,
+          "base": "surrender"
+        },
+        {
+          "word": "triggering",
+          "def": "Activating emotional response",
+          "syllables": 3,
+          "base": "trigger"
+        },
+        {
+          "word": "healing",
+          "def": "Restoring to wholeness",
+          "syllables": 2,
+          "weak": true,
+          "base": "heal"
+        },
+        {
+          "word": "transcending",
+          "def": "Rising above limitations",
+          "syllables": 3,
+          "base": "transcend"
+        }
+      ]
+    }
+  },
+  "modifiers": {
+    "crypto": {
+      "family": "tech",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "homomorphic",
+          "def": "Allowing computation on encrypted data",
+          "syllables": 4,
+          "energy": "Secret math, privacy-preserving",
+          "pairsWellWith": [
+            "architectures",
+            "protocols",
+            "proofs"
+          ]
+        },
+        {
+          "word": "Byzantine",
+          "def": "Fault-tolerant even when components fail maliciously",
+          "syllables": 3,
+          "energy": "Trust-minimized, adversarial",
+          "pairsWellWith": [
+            "consensus",
+            "systems",
+            "validators"
+          ]
+        },
+        {
+          "word": "merkleized",
+          "def": "Organized in hash trees for verification",
+          "syllables": 3,
+          "energy": "Cryptographic proof structure",
+          "pairsWellWith": [
+            "state",
+            "proofs",
+            "commitments"
+          ]
+        },
+        {
+          "word": "zero-knowledge",
+          "def": "Proving truth without revealing data",
+          "syllables": 4,
+          "energy": "Privacy magic, selective disclosure",
+          "pairsWellWith": [
+            "proofs",
+            "attestations",
+            "credentials"
+          ]
+        },
+        {
+          "word": "permissionless",
+          "def": "Accessible without gatekeepers",
+          "syllables": 4,
+          "energy": "Open, censorship-resistant",
+          "pairsWellWith": [
+            "systems",
+            "protocols",
+            "markets"
+          ]
+        },
+        {
+          "word": "trustless",
+          "def": "Operating without requiring trust",
+          "syllables": 2,
+          "energy": "Cryptographically guaranteed",
+          "pairsWellWith": [
+            "bridges",
+            "swaps",
+            "settlements"
+          ]
+        },
+        {
+          "word": "collateralized",
+          "def": "Backed by locked assets",
+          "syllables": 6,
+          "energy": "Secured, over-backed",
+          "pairsWellWith": [
+            "positions",
+            "loans",
+            "stablecoins"
+          ]
+        },
+        {
+          "word": "slashable",
+          "def": "Subject to penalty for misbehavior",
+          "syllables": 2,
+          "energy": "Skin in the game, accountable",
+          "pairsWellWith": [
+            "stakes",
+            "validators",
+            "bonds"
+          ]
+        },
+        {
+          "word": "composable",
+          "def": "Able to be combined like building blocks",
+          "syllables": 3,
+          "energy": "Lego-like, modular",
+          "pairsWellWith": [
+            "protocols",
+            "primitives",
+            "yields"
+          ]
+        },
+        {
+          "word": "bonded",
+          "def": "Locked with commitment",
+          "syllables": 2,
+          "energy": "Committed, bound",
+          "pairsWellWith": [
+            "liquidity",
+            "curves",
+            "validators"
+          ]
+        },
+        {
+          "word": "delegated",
+          "def": "Authority transferred to representative",
+          "syllables": 4,
+          "energy": "Proxy, representative",
+          "pairsWellWith": [
+            "stakes",
+            "governance",
+            "authority"
+          ]
+        },
+        {
+          "word": "atomic",
+          "def": "All-or-nothing transaction",
+          "syllables": 3,
+          "energy": "Complete or rollback",
+          "pairsWellWith": [
+            "swaps",
+            "transactions",
+            "operations"
+          ]
+        },
+        {
+          "word": "rehypothecated",
+          "def": "Collateral reused multiple times",
+          "syllables": 6,
+          "energy": "Leveraged, recursive",
+          "pairsWellWith": [
+            "assets",
+            "positions",
+            "obligations"
+          ]
+        },
+        {
+          "word": "liquidatable",
+          "def": "Subject to forced sale",
+          "syllables": 4,
+          "energy": "At-risk, threshold-dependent",
+          "pairsWellWith": [
+            "positions",
+            "collateral",
+            "vaults"
+          ]
+        },
+        {
+          "word": "sovereign",
+          "def": "Self-governing, independent",
+          "syllables": 3,
+          "energy": "Autonomous, self-custodial",
+          "pairsWellWith": [
+            "identity",
+            "keys",
+            "rollups"
+          ]
+        },
+        {
+          "word": "staked",
+          "def": "Locked up as commitment",
+          "syllables": 2
+        },
+        {
+          "word": "bridged",
+          "def": "Transferred across networks",
+          "syllables": 2
+        },
+        {
+          "word": "wrapped",
+          "def": "Token representing another asset",
+          "syllables": 2
+        },
+        {
+          "word": "custodial",
+          "def": "Held by third party",
+          "syllables": 3
+        },
+        {
+          "word": "non-custodial",
+          "def": "Controlled directly by owner",
+          "syllables": 4
+        }
+      ]
+    },
+    "physics": {
+      "family": "science",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "quantum-entangled",
+          "def": "Correlated across distance",
+          "syllables": 5,
+          "energy": "Spooky action, non-local",
+          "pairsWellWith": [
+            "states",
+            "particles",
+            "decisions"
+          ]
+        },
+        {
+          "word": "non-Euclidean",
+          "def": "Geometry where parallel lines meet",
+          "syllables": 4,
+          "energy": "Curved space, counter-intuitive",
+          "pairsWellWith": [
+            "geometries",
+            "spaces",
+            "thinking"
+          ]
+        },
+        {
+          "word": "topological",
+          "def": "Properties preserved under deformation",
+          "syllables": 5,
+          "energy": "Rubber-sheet geometry",
+          "pairsWellWith": [
+            "invariants",
+            "phases",
+            "structures"
+          ]
+        },
+        {
+          "word": "eigenvalue",
+          "def": "Special scaling factor of transformation",
+          "syllables": 4,
+          "energy": "Characteristic, fundamental",
+          "pairsWellWith": [
+            "decompositions",
+            "spectra",
+            "problems"
+          ]
+        },
+        {
+          "word": "stochastic",
+          "def": "Randomly determined, probabilistic",
+          "syllables": 3,
+          "energy": "Chance-driven, uncertain",
+          "pairsWellWith": [
+            "processes",
+            "models",
+            "outcomes"
+          ]
+        },
+        {
+          "word": "Riemannian",
+          "def": "Curved space geometry",
+          "syllables": 3,
+          "energy": "Warped, gravitational",
+          "pairsWellWith": [
+            "manifolds",
+            "metrics",
+            "curvature"
+          ]
+        },
+        {
+          "word": "fractal",
+          "def": "Self-similar at all scales",
+          "syllables": 2,
+          "energy": "Infinite detail, recursive patterns",
+          "pairsWellWith": [
+            "dimensions",
+            "boundaries",
+            "structures"
+          ]
+        },
+        {
+          "word": "ergodic",
+          "def": "Eventually exploring all states",
+          "syllables": 3,
+          "energy": "Time-averaged equals space-averaged",
+          "pairsWellWith": [
+            "systems",
+            "processes",
+            "assumptions"
+          ]
+        },
+        {
+          "word": "Hamiltonian",
+          "def": "Describing total energy of system",
+          "syllables": 4,
+          "energy": "Energy-conserving, fundamental",
+          "pairsWellWith": [
+            "dynamics",
+            "systems",
+            "flows"
+          ]
+        },
+        {
+          "word": "Lagrangian",
+          "def": "Describing motion via energy difference",
+          "syllables": 3,
+          "energy": "Least action principle",
+          "pairsWellWith": [
+            "mechanics",
+            "formulations",
+            "densities"
+          ]
+        },
+        {
+          "word": "isomorphic",
+          "def": "Having identical structure",
+          "syllables": 4,
+          "energy": "Structurally equivalent",
+          "pairsWellWith": [
+            "mappings",
+            "relationships",
+            "systems"
+          ]
+        },
+        {
+          "word": "asymptotic",
+          "def": "Approaching limit without reaching",
+          "syllables": 4,
+          "energy": "Tending toward, limiting",
+          "pairsWellWith": [
+            "behavior",
+            "bounds",
+            "freedom"
+          ]
+        },
+        {
+          "word": "holomorphic",
+          "def": "Complex-differentiable everywhere",
+          "syllables": 4,
+          "energy": "Infinitely smooth, analytic",
+          "pairsWellWith": [
+            "functions",
+            "structures",
+            "mappings"
+          ]
+        },
+        {
+          "word": "symplectic",
+          "def": "Preserving phase space structure",
+          "syllables": 3,
+          "energy": "Conservation geometry",
+          "pairsWellWith": [
+            "manifolds",
+            "structures",
+            "forms"
+          ]
+        },
+        {
+          "word": "Gaussian",
+          "def": "Following bell-curve distribution",
+          "syllables": 2,
+          "energy": "Normal, expected",
+          "pairsWellWith": [
+            "distributions",
+            "noise",
+            "priors"
+          ]
+        },
+        {
+          "word": "Bayesian",
+          "def": "Updating probability on evidence",
+          "syllables": 2
+        },
+        {
+          "word": "Markovian",
+          "def": "Future depends only on present",
+          "syllables": 3
+        },
+        {
+          "word": "Hermitian",
+          "def": "Equal to own conjugate transpose",
+          "syllables": 3
+        },
+        {
+          "word": "Lorentzian",
+          "def": "Relating to special relativity",
+          "syllables": 3
+        },
+        {
+          "word": "chaotic",
+          "def": "Sensitive to initial conditions",
+          "syllables": 2
+        }
+      ]
+    },
+    "ancient": {
+      "family": "mystic",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "Hermetic",
+          "def": "Relating to Hermes Trismegistus, sealed/secret",
+          "syllables": 3,
+          "energy": "Alchemical, mystery tradition",
+          "pairsWellWith": [
+            "seals",
+            "principles",
+            "transmissions"
+          ]
+        },
+        {
+          "word": "Pharaonic",
+          "def": "Relating to ancient Egyptian rulers",
+          "syllables": 3,
+          "energy": "Monumental, divine kingship",
+          "pairsWellWith": [
+            "protocols",
+            "timescales",
+            "ambition"
+          ]
+        },
+        {
+          "word": "Delphic",
+          "def": "Prophetically ambiguous",
+          "syllables": 2,
+          "energy": "Cryptic, interpretable multiple ways",
+          "pairsWellWith": [
+            "pronouncements",
+            "guidance",
+            "warnings"
+          ]
+        },
+        {
+          "word": "Eleusinian",
+          "def": "Relating to Greek mystery rites",
+          "syllables": 4,
+          "energy": "Initiatory, transformative secrets",
+          "pairsWellWith": [
+            "mysteries",
+            "processes",
+            "revelations"
+          ]
+        },
+        {
+          "word": "cuneiform",
+          "def": "Wedge-shaped ancient writing",
+          "syllables": 3,
+          "energy": "Primordial record-keeping",
+          "pairsWellWith": [
+            "inscriptions",
+            "logs",
+            "contracts"
+          ]
+        },
+        {
+          "word": "Sumerian",
+          "def": "From earliest known civilization",
+          "syllables": 3,
+          "energy": "Proto-, foundational",
+          "pairsWellWith": [
+            "templates",
+            "precedents",
+            "debts"
+          ]
+        },
+        {
+          "word": "Akkadian",
+          "def": "Ancient Mesopotamian Semitic",
+          "syllables": 3,
+          "energy": "Imperial, consolidating",
+          "pairsWellWith": [
+            "edicts",
+            "standards",
+            "protocols"
+          ]
+        },
+        {
+          "word": "Ptolemaic",
+          "def": "Earth-centered cosmology",
+          "syllables": 3,
+          "energy": "Outdated but elegant models",
+          "pairsWellWith": [
+            "assumptions",
+            "frameworks",
+            "epicycles"
+          ]
+        },
+        {
+          "word": "Gnostic",
+          "def": "Relating to secret spiritual knowledge",
+          "syllables": 2,
+          "energy": "Hidden truth, dualistic",
+          "pairsWellWith": [
+            "insights",
+            "revelations",
+            "hierarchies"
+          ]
+        },
+        {
+          "word": "Orphic",
+          "def": "Relating to mystical Greek tradition",
+          "syllables": 2,
+          "energy": "Death/rebirth, poetic mystery",
+          "pairsWellWith": [
+            "descents",
+            "returns",
+            "transformations"
+          ]
+        },
+        {
+          "word": "Chaldean",
+          "def": "Ancient Babylonian astrological",
+          "syllables": 2,
+          "energy": "Star-wisdom, prophetic",
+          "pairsWellWith": [
+            "calculations",
+            "oracles",
+            "sequences"
+          ]
+        },
+        {
+          "word": "Mithraic",
+          "def": "Relating to Roman mystery cult",
+          "syllables": 2,
+          "energy": "Grades of initiation, solar",
+          "pairsWellWith": [
+            "grades",
+            "trials",
+            "revelations"
+          ]
+        },
+        {
+          "word": "Zoroastrian",
+          "def": "Ancient Persian dualist religion",
+          "syllables": 3,
+          "energy": "Light vs dark, cosmic struggle",
+          "pairsWellWith": [
+            "dualities",
+            "purifications",
+            "flames"
+          ]
+        },
+        {
+          "word": "Kabbalistic",
+          "def": "Jewish mystical tradition",
+          "syllables": 4,
+          "energy": "Tree of life, emanations",
+          "pairsWellWith": [
+            "structures",
+            "paths",
+            "correspondences"
+          ]
+        },
+        {
+          "word": "Vedic",
+          "def": "Ancient Indian scriptural tradition",
+          "syllables": 2,
+          "energy": "Cosmic order, hymnic",
+          "pairsWellWith": [
+            "chants",
+            "protocols",
+            "sacrifices"
+          ]
+        },
+        {
+          "word": "Pythagorean",
+          "def": "Sacred mathematics and harmony",
+          "syllables": 4
+        },
+        {
+          "word": "Rosicrucian",
+          "def": "Secret society alchemy",
+          "syllables": 4
+        },
+        {
+          "word": "Templar",
+          "def": "Medieval military-religious order",
+          "syllables": 2
+        },
+        {
+          "word": "Masonic",
+          "def": "Fraternal order with ritual",
+          "syllables": 3
+        },
+        {
+          "word": "Druidic",
+          "def": "Celtic priest tradition",
+          "syllables": 2
+        }
+      ]
+    },
+    "semiotics": {
+      "family": "meaning",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "semiotic",
+          "def": "Relating to signs as meaning-carriers",
+          "syllables": 3
+        },
+        {
+          "word": "signified",
+          "def": "The concept a sign points to",
+          "syllables": 3
+        },
+        {
+          "word": "denotative",
+          "def": "The literal meaning",
+          "syllables": 4
+        },
+        {
+          "word": "connotative",
+          "def": "Associative meaning beyond literal",
+          "syllables": 4
+        },
+        {
+          "word": "indexical",
+          "def": "Pointing by direct connection",
+          "syllables": 4
+        },
+        {
+          "word": "iconic",
+          "def": "Resembling what it represents",
+          "syllables": 3
+        },
+        {
+          "word": "symbolic",
+          "def": "Arbitrary sign-meaning relationship",
+          "syllables": 3
+        },
+        {
+          "word": "syntactic",
+          "def": "Relating to structural arrangement",
+          "syllables": 3
+        },
+        {
+          "word": "semantic",
+          "def": "Relating to meaning",
+          "syllables": 3
+        },
+        {
+          "word": "pragmatic",
+          "def": "Context-dependent meaning",
+          "syllables": 3
+        },
+        {
+          "word": "polysemous",
+          "def": "Having multiple meanings",
+          "syllables": 4
+        },
+        {
+          "word": "diachronic",
+          "def": "Across time, historical",
+          "syllables": 3
+        },
+        {
+          "word": "synchronic",
+          "def": "At one point in time",
+          "syllables": 3
+        },
+        {
+          "word": "paradigmatic",
+          "def": "Substitutable choices",
+          "syllables": 5
+        },
+        {
+          "word": "syntagmatic",
+          "def": "Combinations in sequence",
+          "syllables": 4
+        },
+        {
+          "word": "metalinguistic",
+          "def": "Language about language",
+          "syllables": 5
+        },
+        {
+          "word": "performative",
+          "def": "Speech that does what it says",
+          "syllables": 4
+        },
+        {
+          "word": "hermeneutic",
+          "def": "Relating to interpretation",
+          "syllables": 4
+        },
+        {
+          "word": "exegetical",
+          "def": "Critical explanation of text",
+          "syllables": 5
+        },
+        {
+          "word": "apophatic",
+          "def": "Defining by what something is not",
+          "syllables": 4
+        }
+      ]
+    },
+    "alchemy": {
+      "family": "mystic",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "alchemical",
+          "def": "Relating to transformation to gold",
+          "syllables": 4
+        },
+        {
+          "word": "transmutative",
+          "def": "Changing fundamental nature",
+          "syllables": 4
+        },
+        {
+          "word": "nigredo",
+          "def": "The blackening - first stage",
+          "syllables": 3
+        },
+        {
+          "word": "albedo",
+          "def": "The whitening - second stage",
+          "syllables": 3
+        },
+        {
+          "word": "citrinitas",
+          "def": "The yellowing - third stage",
+          "syllables": 4
+        },
+        {
+          "word": "rubedo",
+          "def": "The reddening - final stage",
+          "syllables": 3
+        },
+        {
+          "word": "prima-materia",
+          "def": "Original undifferentiated substance",
+          "syllables": 5
+        },
+        {
+          "word": "quintessential",
+          "def": "The fifth element, pure essence",
+          "syllables": 4
+        },
+        {
+          "word": "spagyric",
+          "def": "Relating to plant alchemy",
+          "syllables": 3
+        },
+        {
+          "word": "chrysopoeia",
+          "def": "Transmutation into gold",
+          "syllables": 3
+        },
+        {
+          "word": "mercurial",
+          "def": "Volatile, quick-changing",
+          "syllables": 3
+        },
+        {
+          "word": "saturnine",
+          "def": "Heavy, slow, leaden",
+          "syllables": 3
+        },
+        {
+          "word": "solar",
+          "def": "Relating to gold, consciousness",
+          "syllables": 2,
+          "weak": true
+        },
+        {
+          "word": "lunar",
+          "def": "Relating to silver, unconscious",
+          "syllables": 2,
+          "weak": true
+        },
+        {
+          "word": "sulfuric",
+          "def": "The combustible principle",
+          "syllables": 3
+        },
+        {
+          "word": "saline",
+          "def": "The principle of fixity",
+          "syllables": 2
+        },
+        {
+          "word": "vitriol",
+          "def": "Corrosive truth dissolving falseness",
+          "syllables": 2
+        },
+        {
+          "word": "hermetically-sealed",
+          "def": "Completely airtight",
+          "syllables": 7
+        },
+        {
+          "word": "tincture",
+          "def": "Extracted transforming essence",
+          "syllables": 2
+        },
+        {
+          "word": "calcined",
+          "def": "Heated to powder, purified",
+          "syllables": 3
+        }
+      ]
+    },
+    "astronomy": {
+      "family": "science",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "stellar",
+          "def": "Relating to stars",
+          "syllables": 2
+        },
+        {
+          "word": "planetary",
+          "def": "Relating to planets",
+          "syllables": 4
+        },
+        {
+          "word": "orbital",
+          "def": "Moving in curved paths",
+          "syllables": 3
+        },
+        {
+          "word": "ecliptic",
+          "def": "Apparent path of sun",
+          "syllables": 3
+        },
+        {
+          "word": "perihelion",
+          "def": "Closest point to sun",
+          "syllables": 4
+        },
+        {
+          "word": "aphelion",
+          "def": "Farthest point from sun",
+          "syllables": 3
+        },
+        {
+          "word": "azimuthal",
+          "def": "Horizontal angle from north",
+          "syllables": 4
+        },
+        {
+          "word": "zenith",
+          "def": "Point directly overhead",
+          "syllables": 2
+        },
+        {
+          "word": "nadir",
+          "def": "Point directly below, lowest",
+          "syllables": 2
+        },
+        {
+          "word": "red-shifted",
+          "def": "Light stretched by receding objects",
+          "syllables": 3
+        },
+        {
+          "word": "blue-shifted",
+          "def": "Light compressed by approaching",
+          "syllables": 3
+        },
+        {
+          "word": "nebular",
+          "def": "Clouds of gas and dust",
+          "syllables": 3
+        },
+        {
+          "word": "pulsar",
+          "def": "Rotating neutron star beams",
+          "syllables": 2
+        },
+        {
+          "word": "quasar",
+          "def": "Luminous active galactic nucleus",
+          "syllables": 2
+        },
+        {
+          "word": "supernova",
+          "def": "Explosive stellar death",
+          "syllables": 4
+        },
+        {
+          "word": "accretion",
+          "def": "Gradual accumulation by gravity",
+          "syllables": 3
+        },
+        {
+          "word": "binary",
+          "def": "Two bodies orbiting each other",
+          "syllables": 3,
+          "weak": true
+        },
+        {
+          "word": "circumstellar",
+          "def": "Surrounding a star",
+          "syllables": 4
+        },
+        {
+          "word": "interstellar",
+          "def": "Between stars",
+          "syllables": 4
+        },
+        {
+          "word": "extragalactic",
+          "def": "Beyond our galaxy",
+          "syllables": 5
+        }
+      ]
+    },
+    "astrology": {
+      "family": "mystic",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "natal",
+          "def": "Relating to moment of birth",
+          "syllables": 2
+        },
+        {
+          "word": "ascendant",
+          "def": "Rising sign, mask to world",
+          "syllables": 3
+        },
+        {
+          "word": "descendant",
+          "def": "Setting sign, what we seek in others",
+          "syllables": 3
+        },
+        {
+          "word": "midheaven",
+          "def": "Highest point, public reputation",
+          "syllables": 3
+        },
+        {
+          "word": "conjunct",
+          "def": "Two planets merged energy",
+          "syllables": 2
+        },
+        {
+          "word": "opposed",
+          "def": "180 degrees apart, tension",
+          "syllables": 3
+        },
+        {
+          "word": "squared",
+          "def": "90 degrees apart, friction",
+          "syllables": 2
+        },
+        {
+          "word": "trined",
+          "def": "120 degrees apart, harmony",
+          "syllables": 2
+        },
+        {
+          "word": "sextile",
+          "def": "60 degrees apart, opportunity",
+          "syllables": 2
+        },
+        {
+          "word": "retrograde",
+          "def": "Appearing to move backward",
+          "syllables": 3
+        },
+        {
+          "word": "direct",
+          "def": "Moving forward after retrograde",
+          "syllables": 2,
+          "weak": true
+        },
+        {
+          "word": "void-of-course",
+          "def": "Moon making no aspects",
+          "syllables": 3
+        },
+        {
+          "word": "cazimi",
+          "def": "Planet empowered by sun",
+          "syllables": 3
+        },
+        {
+          "word": "combust",
+          "def": "Planet overwhelmed by sun",
+          "syllables": 2
+        },
+        {
+          "word": "exalted",
+          "def": "Planet in strongest sign",
+          "syllables": 3
+        },
+        {
+          "word": "debilitated",
+          "def": "Planet in weakest sign",
+          "syllables": 5
+        },
+        {
+          "word": "cardinal",
+          "def": "Initiating energy",
+          "syllables": 3
+        },
+        {
+          "word": "fixed",
+          "def": "Sustaining energy",
+          "syllables": 2,
+          "weak": true
+        },
+        {
+          "word": "mutable",
+          "def": "Adapting energy",
+          "syllables": 2
+        },
+        {
+          "word": "Saturnian",
+          "def": "Structured, disciplined, limiting",
+          "syllables": 3
+        }
+      ]
+    },
+    "chemistry": {
+      "family": "science",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "catalytic",
+          "def": "Accelerating without being consumed",
+          "syllables": 4
+        },
+        {
+          "word": "reactive",
+          "def": "Readily undergoing change",
+          "syllables": 2
+        },
+        {
+          "word": "inert",
+          "def": "Chemically inactive",
+          "syllables": 2
+        },
+        {
+          "word": "volatile",
+          "def": "Easily evaporating, unstable",
+          "syllables": 3
+        },
+        {
+          "word": "stable",
+          "def": "Resistant to change",
+          "syllables": 1,
+          "weak": true
+        },
+        {
+          "word": "soluble",
+          "def": "Able to be dissolved",
+          "syllables": 2
+        },
+        {
+          "word": "miscible",
+          "def": "Able to be mixed",
+          "syllables": 2
+        },
+        {
+          "word": "immiscible",
+          "def": "Unable to be mixed",
+          "syllables": 3
+        },
+        {
+          "word": "saturated",
+          "def": "Holding maximum amount",
+          "syllables": 4
+        },
+        {
+          "word": "supersaturated",
+          "def": "Holding more than maximum",
+          "syllables": 6
+        },
+        {
+          "word": "precipitated",
+          "def": "Fallen out as solid",
+          "syllables": 5
+        },
+        {
+          "word": "ionic",
+          "def": "Held by electrical charge",
+          "syllables": 2
+        },
+        {
+          "word": "covalent",
+          "def": "Sharing electrons",
+          "syllables": 3
+        },
+        {
+          "word": "polar",
+          "def": "Uneven charge distribution",
+          "syllables": 2,
+          "weak": true
+        },
+        {
+          "word": "acidic",
+          "def": "Proton-donating, corrosive",
+          "syllables": 3
+        },
+        {
+          "word": "alkaline",
+          "def": "Proton-accepting, basic",
+          "syllables": 3
+        },
+        {
+          "word": "oxidized",
+          "def": "Lost electrons, degraded",
+          "syllables": 4
+        },
+        {
+          "word": "reduced",
+          "def": "Gained electrons, energized",
+          "syllables": 3
+        },
+        {
+          "word": "exothermic",
+          "def": "Releasing energy",
+          "syllables": 4
+        },
+        {
+          "word": "endothermic",
+          "def": "Absorbing energy",
+          "syllables": 4
+        }
+      ]
+    },
+    "startup": {
+      "family": "corporate",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "bootstrapped",
+          "def": "Self-funded",
+          "syllables": 3
+        },
+        {
+          "word": "venture-backed",
+          "def": "Funded by VC",
+          "syllables": 4
+        },
+        {
+          "word": "seed-stage",
+          "def": "Early funding phase",
+          "syllables": 2
+        },
+        {
+          "word": "Series-A",
+          "def": "First major funding round",
+          "syllables": 3
+        },
+        {
+          "word": "unicorn",
+          "def": "Valued over $1 billion",
+          "syllables": 3
+        },
+        {
+          "word": "cockroach",
+          "def": "Built for survival",
+          "syllables": 2
+        },
+        {
+          "word": "ramen-profitable",
+          "def": "Making just enough to survive",
+          "syllables": 5
+        },
+        {
+          "word": "hockey-stick",
+          "def": "Sudden exponential growth",
+          "syllables": 3
+        },
+        {
+          "word": "blitzscaling",
+          "def": "Prioritizing speed over efficiency",
+          "syllables": 3
+        },
+        {
+          "word": "lean",
+          "def": "Minimizing waste",
+          "syllables": 1,
+          "weak": true
+        },
+        {
+          "word": "pivoted",
+          "def": "Fundamentally changed direction",
+          "syllables": 3
+        },
+        {
+          "word": "product-market-fit",
+          "def": "Product meets real demand",
+          "syllables": 5
+        },
+        {
+          "word": "moated",
+          "def": "Having defensible advantage",
+          "syllables": 2
+        },
+        {
+          "word": "runway-conscious",
+          "def": "Aware of limited time/money",
+          "syllables": 4
+        },
+        {
+          "word": "burn-rate",
+          "def": "Speed of spending cash",
+          "syllables": 2
+        },
+        {
+          "word": "diluted",
+          "def": "Ownership percentage reduced",
+          "syllables": 3
+        },
+        {
+          "word": "vested",
+          "def": "Earned ownership over time",
+          "syllables": 2
+        },
+        {
+          "word": "acqui-hired",
+          "def": "Bought for the team",
+          "syllables": 4
+        },
+        {
+          "word": "soft-launched",
+          "def": "Released quietly",
+          "syllables": 3
+        },
+        {
+          "word": "growth-hacked",
+          "def": "Acquired users cleverly",
+          "syllables": 3
+        }
+      ]
+    },
+    "selfHelp": {
+      "family": "psyche",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "self-actualized",
+          "def": "Reaching full potential",
+          "syllables": 5
+        },
+        {
+          "word": "growth-minded",
+          "def": "Believing abilities develop",
+          "syllables": 3
+        },
+        {
+          "word": "fixed-minded",
+          "def": "Believing abilities static",
+          "syllables": 4
+        },
+        {
+          "word": "high-vibrational",
+          "def": "Elevated frequency",
+          "syllables": 5
+        },
+        {
+          "word": "low-vibrational",
+          "def": "Diminished frequency",
+          "syllables": 5
+        },
+        {
+          "word": "manifested",
+          "def": "Brought into reality by intention",
+          "syllables": 4
+        },
+        {
+          "word": "aligned",
+          "def": "In harmony with purpose",
+          "syllables": 3,
+          "weak": true
+        },
+        {
+          "word": "authentic",
+          "def": "True to genuine self",
+          "syllables": 3
+        },
+        {
+          "word": "triggered",
+          "def": "Emotionally activated",
+          "syllables": 3
+        },
+        {
+          "word": "trauma-informed",
+          "def": "Sensitive to trauma",
+          "syllables": 5
+        },
+        {
+          "word": "boundaries-respecting",
+          "def": "Honoring personal limits",
+          "syllables": 6
+        },
+        {
+          "word": "codependent",
+          "def": "Unhealthily reliant",
+          "syllables": 4
+        },
+        {
+          "word": "interdependent",
+          "def": "Healthily connected",
+          "syllables": 5
+        },
+        {
+          "word": "shadow-integrated",
+          "def": "Incorporated disowned parts",
+          "syllables": 6
+        },
+        {
+          "word": "limiting-belief",
+          "def": "Constraining assumption",
+          "syllables": 5
+        },
+        {
+          "word": "abundance-minded",
+          "def": "Believing enough for all",
+          "syllables": 5
+        },
+        {
+          "word": "scarcity-minded",
+          "def": "Believing zero-sum",
+          "syllables": 5
+        },
+        {
+          "word": "flow-state",
+          "def": "Optimal engagement",
+          "syllables": 2
+        },
+        {
+          "word": "grounded",
+          "def": "Stable, connected",
+          "syllables": 2,
+          "weak": true
+        },
+        {
+          "word": "embodied",
+          "def": "Integrated in physical form",
+          "syllables": 3
+        }
+      ]
+    },
+    "darwinism": {
+      "family": "science",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "Darwinian",
+          "def": "Natural selection and survival",
+          "syllables": 3
+        },
+        {
+          "word": "evolved",
+          "def": "Changed through selection",
+          "syllables": 3,
+          "weak": true
+        },
+        {
+          "word": "adapted",
+          "def": "Modified to fit environment",
+          "syllables": 3,
+          "weak": true
+        },
+        {
+          "word": "selected",
+          "def": "Chosen by pressures",
+          "syllables": 3,
+          "weak": true
+        },
+        {
+          "word": "mutated",
+          "def": "Randomly changed",
+          "syllables": 3,
+          "weak": true
+        },
+        {
+          "word": "fit",
+          "def": "Well-suited to survive",
+          "syllables": 1,
+          "weak": true
+        },
+        {
+          "word": "vestigial",
+          "def": "From earlier evolutionary stage",
+          "syllables": 3
+        },
+        {
+          "word": "atavistic",
+          "def": "Reverting to ancestral",
+          "syllables": 4
+        },
+        {
+          "word": "convergent",
+          "def": "Independently evolving similar",
+          "syllables": 3
+        },
+        {
+          "word": "divergent",
+          "def": "Evolving away from ancestor",
+          "syllables": 3
+        },
+        {
+          "word": "speciated",
+          "def": "Split into distinct species",
+          "syllables": 3
+        },
+        {
+          "word": "endemic",
+          "def": "Native to specific region",
+          "syllables": 3
+        },
+        {
+          "word": "invasive",
+          "def": "Spreading aggressively",
+          "syllables": 3
+        },
+        {
+          "word": "apex",
+          "def": "Top of food chain",
+          "syllables": 2,
+          "weak": true
+        },
+        {
+          "word": "symbiotic",
+          "def": "Mutually beneficial",
+          "syllables": 3
+        },
+        {
+          "word": "parasitic",
+          "def": "Benefiting at host expense",
+          "syllables": 4
+        },
+        {
+          "word": "commensal",
+          "def": "Benefiting without harm",
+          "syllables": 3
+        },
+        {
+          "word": "phenotypic",
+          "def": "Observable traits",
+          "syllables": 4
+        },
+        {
+          "word": "genotypic",
+          "def": "Genetic makeup",
+          "syllables": 4
+        },
+        {
+          "word": "extinction-level",
+          "def": "Ending entire lineages",
+          "syllables": 5
+        }
+      ]
+    },
+    "zeitgeist": {
+      "family": "internet",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "AI-generated",
+          "def": "Created by artificial intelligence",
+          "syllables": 5,
+          "energy": "Synthetic, questionable provenance",
+          "pairsWellWith": [
+            "content",
+            "slop",
+            "artifacts"
+          ]
+        },
+        {
+          "word": "hallucinated",
+          "def": "Confidently wrong (AI term)",
+          "syllables": 5,
+          "energy": "Plausible nonsense",
+          "pairsWellWith": [
+            "facts",
+            "citations",
+            "memories"
+          ]
+        },
+        {
+          "word": "vibes-based",
+          "def": "Driven by feeling not analysis",
+          "syllables": 4,
+          "energy": "Intuitive, unrigorous",
+          "pairsWellWith": [
+            "decisions",
+            "assessments",
+            "markets"
+          ]
+        },
+        {
+          "word": "doom-scrolled",
+          "def": "Consumed via endless negative feed",
+          "syllables": 3,
+          "energy": "Anxiety-inducing, addictive",
+          "pairsWellWith": [
+            "narratives",
+            "content",
+            "cycles"
+          ]
+        },
+        {
+          "word": "enshittified",
+          "def": "Degraded for profit extraction",
+          "syllables": 4,
+          "energy": "Platform decay, user-hostile",
+          "pairsWellWith": [
+            "platforms",
+            "services",
+            "experiences"
+          ]
+        },
+        {
+          "word": "meme-stockified",
+          "def": "Driven by viral retail enthusiasm",
+          "syllables": 4,
+          "energy": "Reddit energy, irrational",
+          "pairsWellWith": [
+            "assets",
+            "movements",
+            "rallies"
+          ]
+        },
+        {
+          "word": "deep-faked",
+          "def": "Synthetically altered to deceive",
+          "syllables": 3,
+          "energy": "Untrustworthy, manipulated",
+          "pairsWellWith": [
+            "media",
+            "evidence",
+            "testimony"
+          ]
+        },
+        {
+          "word": "post-truth",
+          "def": "Where facts matter less than narrative",
+          "syllables": 2,
+          "energy": "Epistemic chaos",
+          "pairsWellWith": [
+            "discourse",
+            "environments",
+            "eras"
+          ]
+        },
+        {
+          "word": "chronically-online",
+          "def": "Excessively internet-native",
+          "syllables": 6,
+          "energy": "Terminally plugged in",
+          "pairsWellWith": [
+            "discourse",
+            "references",
+            "behavior"
+          ]
+        },
+        {
+          "word": "touch-grass",
+          "def": "Needing to reconnect with reality",
+          "syllables": 2,
+          "energy": "Go outside energy",
+          "pairsWellWith": [
+            "advice",
+            "interventions",
+            "breaks"
+          ]
+        },
+        {
+          "word": "main-character",
+          "def": "Behaving as center of narrative",
+          "syllables": 4,
+          "energy": "Protagonist syndrome",
+          "pairsWellWith": [
+            "energy",
+            "moments",
+            "delusions"
+          ]
+        },
+        {
+          "word": "quietly-quitting",
+          "def": "Doing minimum required work",
+          "syllables": 4,
+          "energy": "Disengaged, boundaries",
+          "pairsWellWith": [
+            "employees",
+            "efforts",
+            "commitments"
+          ]
+        },
+        {
+          "word": "parasocial",
+          "def": "One-sided relationship with media figure",
+          "syllables": 4
+        },
+        {
+          "word": "terminally-online",
+          "def": "So internet-brained as to be disconnected",
+          "syllables": 6
+        },
+        {
+          "word": "based",
+          "def": "Admirably authentic regardless of opinion",
+          "syllables": 2,
+          "weak": true
+        },
+        {
+          "word": "mid",
+          "def": "Mediocre, unremarkable",
+          "syllables": 1,
+          "weak": true
+        },
+        {
+          "word": "bussin",
+          "def": "Extremely good",
+          "syllables": 2
+        },
+        {
+          "word": "slay",
+          "def": "To do exceptionally well",
+          "syllables": 1
+        },
+        {
+          "word": "no-cap",
+          "def": "Genuinely, without exaggeration",
+          "syllables": 2
+        },
+        {
+          "word": "rent-free",
+          "def": "Occupying thoughts without permission",
+          "syllables": 2
+        },
+        {
+          "word": "tariffed",
+          "def": "Subject to import/export taxes",
+          "syllables": 3,
+          "energy": "Trade war, protectionist",
+          "pairsWellWith": [
+            "goods",
+            "relationships",
+            "flows"
+          ]
+        },
+        {
+          "word": "sanctioned",
+          "def": "Officially penalized/restricted",
+          "syllables": 3,
+          "energy": "Geopolitical, excluded",
+          "pairsWellWith": [
+            "entities",
+            "transactions",
+            "regions"
+          ]
+        },
+        {
+          "word": "climate-anxious",
+          "def": "Worried about environmental collapse",
+          "syllables": 4,
+          "energy": "Eco-doom, existential",
+          "pairsWellWith": [
+            "generations",
+            "decisions",
+            "portfolios"
+          ]
+        }
+      ]
+    },
+    "indigenous": {
+      "family": "indigenous",
+      "sensitive": true,
+      "entries": [
+        {
+          "word": "seven-generation",
+          "def": "Considering impact across deep time",
+          "syllables": 6
+        },
+        {
+          "word": "place-based",
+          "def": "Rooted in specific land and territory",
+          "syllables": 3
+        },
+        {
+          "word": "consensus-driven",
+          "def": "Requiring broad agreement",
+          "syllables": 5
+        },
+        {
+          "word": "reciprocal",
+          "def": "Based on mutual exchange",
+          "syllables": 4
+        },
+        {
+          "word": "cyclical",
+          "def": "Returning, seasonal, non-linear",
+          "syllables": 3
+        },
+        {
+          "word": "relational",
+          "def": "Defined by connections",
+          "syllables": 4
+        },
+        {
+          "word": "ceremonial",
+          "def": "Embedded in ritual practice",
+          "syllables": 4
+        },
+        {
+          "word": "intergenerational",
+          "def": "Spanning multiple generations",
+          "syllables": 7
+        },
+        {
+          "word": "land-back",
+          "def": "Returning territory to original peoples",
+          "syllables": 2
+        },
+        {
+          "word": "treaty-bound",
+          "def": "Held by formal agreements",
+          "syllables": 3
+        },
+        {
+          "word": "elder-guided",
+          "def": "Led by accumulated wisdom",
+          "syllables": 4
+        },
+        {
+          "word": "story-carried",
+          "def": "Transmitted through narrative",
+          "syllables": 4
+        },
+        {
+          "word": "water-protector",
+          "def": "Defending water as sacred",
+          "syllables": 5
+        },
+        {
+          "word": "two-spirit",
+          "def": "Traditional non-binary identity",
+          "syllables": 3
+        },
+        {
+          "word": "sovereignty-centered",
+          "def": "Prioritizing self-determination",
+          "syllables": 7
+        }
+      ]
+    },
+    "corporate": {
+      "family": "corporate",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "synergistic",
+          "def": "Combined effect greater than sum",
+          "syllables": 4,
+          "energy": "Buzzword energy, hopeful",
+          "pairsWellWith": [
+            "partnerships",
+            "integrations",
+            "mergers"
+          ]
+        },
+        {
+          "word": "scalable",
+          "def": "Able to grow without proportional cost",
+          "syllables": 2,
+          "energy": "Growth-ready, elastic",
+          "pairsWellWith": [
+            "solutions",
+            "architectures",
+            "teams"
+          ]
+        },
+        {
+          "word": "agile",
+          "def": "Iterative, adaptive methodology",
+          "syllables": 2,
+          "energy": "Sprinting, pivoting",
+          "pairsWellWith": [
+            "frameworks",
+            "transformations",
+            "teams"
+          ]
+        },
+        {
+          "word": "disruptive",
+          "def": "Overturning established patterns",
+          "syllables": 3,
+          "energy": "Revolutionary, threatening incumbents",
+          "pairsWellWith": [
+            "innovations",
+            "entrants",
+            "forces"
+          ]
+        },
+        {
+          "word": "leveraged",
+          "def": "Using borrowed resources to amplify",
+          "syllables": 4,
+          "energy": "Multiplied exposure, risky",
+          "pairsWellWith": [
+            "positions",
+            "buyouts",
+            "returns"
+          ]
+        },
+        {
+          "word": "verticalized",
+          "def": "Integrated across supply chain",
+          "syllables": 5,
+          "energy": "End-to-end, controlled",
+          "pairsWellWith": [
+            "stacks",
+            "solutions",
+            "markets"
+          ]
+        },
+        {
+          "word": "productized",
+          "def": "Packaged as repeatable offering",
+          "syllables": 4,
+          "energy": "Standardized, sellable",
+          "pairsWellWith": [
+            "services",
+            "insights",
+            "solutions"
+          ]
+        },
+        {
+          "word": "monetizable",
+          "def": "Capable of generating revenue",
+          "syllables": 4,
+          "energy": "Value-extractable",
+          "pairsWellWith": [
+            "attention",
+            "data",
+            "relationships"
+          ]
+        },
+        {
+          "word": "frictionless",
+          "def": "Without obstacles",
+          "syllables": 3,
+          "energy": "Smooth, effortless",
+          "pairsWellWith": [
+            "experiences",
+            "onboarding",
+            "transactions"
+          ]
+        },
+        {
+          "word": "asynchronous",
+          "def": "Not happening at same time",
+          "syllables": 4,
+          "energy": "Decoupled, time-shifted",
+          "pairsWellWith": [
+            "communication",
+            "workflows",
+            "processes"
+          ]
+        },
+        {
+          "word": "deprecated",
+          "def": "Marked as obsolete",
+          "syllables": 4,
+          "energy": "Legacy, sunset",
+          "pairsWellWith": [
+            "features",
+            "assumptions",
+            "practices"
+          ]
+        },
+        {
+          "word": "enterprise-grade",
+          "def": "Meeting large org standards",
+          "syllables": 4,
+          "energy": "Serious, expensive",
+          "pairsWellWith": [
+            "security",
+            "solutions",
+            "compliance"
+          ]
+        },
+        {
+          "word": "mission-critical",
+          "def": "Essential for core operations",
+          "syllables": 5,
+          "energy": "Can't-fail, vital",
+          "pairsWellWith": [
+            "systems",
+            "infrastructure",
+            "processes"
+          ]
+        },
+        {
+          "word": "bleeding-edge",
+          "def": "Newest, possibly unstable",
+          "syllables": 3,
+          "energy": "Cutting-edge++, risky",
+          "pairsWellWith": [
+            "technology",
+            "research",
+            "approaches"
+          ]
+        },
+        {
+          "word": "data-driven",
+          "def": "Based on evidence not intuition",
+          "syllables": 4
+        },
+        {
+          "word": "customer-centric",
+          "def": "Focused on user needs",
+          "syllables": 5
+        },
+        {
+          "word": "cloud-native",
+          "def": "Built for cloud from start",
+          "syllables": 3
+        },
+        {
+          "word": "full-stack",
+          "def": "Covering all technology layers",
+          "syllables": 2
+        },
+        {
+          "word": "best-in-class",
+          "def": "Superior to competitors",
+          "syllables": 3
+        },
+        {
+          "word": "actionable",
+          "def": "Able to be acted upon",
+          "syllables": 3
+        },
+        {
+          "word": "horizontalized",
+          "def": "Expanded across parallel markets",
+          "syllables": 6,
+          "energy": "Broad, diversified",
+          "pairsWellWith": [
+            "platforms",
+            "expansions",
+            "plays"
+          ]
+        }
+      ]
+    },
+    "cosmic": {
+      "family": "cosmic",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "celestial",
+          "def": "Relating to the sky or heavens",
+          "syllables": 3,
+          "energy": "Divine, elevated",
+          "pairsWellWith": [
+            "bodies",
+            "mechanics",
+            "navigation"
+          ]
+        },
+        {
+          "word": "geomagnetic",
+          "def": "Relating to Earth's magnetic field",
+          "syllables": 4,
+          "energy": "Invisible force, orienting",
+          "pairsWellWith": [
+            "storms",
+            "reversals",
+            "anomalies"
+          ]
+        },
+        {
+          "word": "intergalactic",
+          "def": "Between galaxies",
+          "syllables": 5,
+          "energy": "Vast scale, lonely distances",
+          "pairsWellWith": [
+            "voids",
+            "medium",
+            "travel"
+          ]
+        },
+        {
+          "word": "tectonic",
+          "def": "Relating to Earth's crustal plates",
+          "syllables": 3,
+          "energy": "Slow, powerful shifts",
+          "pairsWellWith": [
+            "shifts",
+            "pressures",
+            "boundaries"
+          ]
+        },
+        {
+          "word": "solstitial",
+          "def": "Relating to solstices",
+          "syllables": 3,
+          "energy": "Turning points, peaks",
+          "pairsWellWith": [
+            "alignments",
+            "ceremonies",
+            "thresholds"
+          ]
+        },
+        {
+          "word": "meridian",
+          "def": "Relating to noon line / longitude",
+          "syllables": 3,
+          "energy": "Peak, central axis",
+          "pairsWellWith": [
+            "passages",
+            "crossings",
+            "calibrations"
+          ]
+        },
+        {
+          "word": "zodiacal",
+          "def": "Relating to the zodiac belt",
+          "syllables": 3,
+          "energy": "Cyclical, archetypal",
+          "pairsWellWith": [
+            "transits",
+            "influences",
+            "houses"
+          ]
+        },
+        {
+          "word": "equinoctial",
+          "def": "Relating to equinoxes",
+          "syllables": 4,
+          "energy": "Balance points, transitions",
+          "pairsWellWith": [
+            "crossings",
+            "calibrations",
+            "markets"
+          ]
+        },
+        {
+          "word": "volcanic",
+          "def": "Relating to eruptions from below",
+          "syllables": 3,
+          "energy": "Explosive, transformative",
+          "pairsWellWith": [
+            "activity",
+            "risk",
+            "opportunities"
+          ]
+        },
+        {
+          "word": "glacial",
+          "def": "Extremely slow, ice-age related",
+          "syllables": 2,
+          "energy": "Patient, grinding",
+          "pairsWellWith": [
+            "pace",
+            "cycles",
+            "deposits"
+          ]
+        },
+        {
+          "word": "heliocentric",
+          "def": "Sun-centered",
+          "syllables": 4,
+          "energy": "Copernican shift, recentering",
+          "pairsWellWith": [
+            "models",
+            "perspectives",
+            "revolutions"
+          ]
+        },
+        {
+          "word": "sedimentary",
+          "def": "Formed by settling deposits",
+          "syllables": 5
+        },
+        {
+          "word": "metamorphic",
+          "def": "Changed by heat and pressure",
+          "syllables": 4
+        },
+        {
+          "word": "igneous",
+          "def": "Formed from molten material",
+          "syllables": 2
+        },
+        {
+          "word": "alluvial",
+          "def": "Deposited by flowing water",
+          "syllables": 3
+        },
+        {
+          "word": "precession",
+          "def": "Slow wobble of Earth's axis (26,000 year cycle)",
+          "syllables": 3,
+          "energy": "Deep time, gradual drift",
+          "pairsWellWith": [
+            "cycles",
+            "ages",
+            "corrections"
+          ]
+        },
+        {
+          "word": "subduction",
+          "def": "One plate diving under another",
+          "syllables": 3,
+          "energy": "Disappearing, recycling",
+          "pairsWellWith": [
+            "zones",
+            "pressures",
+            "dynamics"
+          ]
+        },
+        {
+          "word": "magnetospheric",
+          "def": "Relating to Earth's magnetic shield",
+          "syllables": 5,
+          "energy": "Protective, deflecting",
+          "pairsWellWith": [
+            "dynamics",
+            "storms",
+            "fluctuations"
+          ]
+        },
+        {
+          "word": "perigean",
+          "def": "Closest point to Earth in orbit",
+          "syllables": 3,
+          "energy": "Intensified, amplified",
+          "pairsWellWith": [
+            "tides",
+            "influences",
+            "proximities"
+          ]
+        }
+      ]
+    }
+  },
+  "nouns": {
+    "infrastructure": {
+      "family": "tech",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "architectures",
+          "def": "Structural designs of systems",
+          "syllables": 5,
+          "energy": "Blueprint, foundation",
+          "singular": "architecture"
+        },
+        {
+          "word": "pipelines",
+          "def": "Channels for sequential processing",
+          "syllables": 4,
+          "energy": "Flow, automation",
+          "singular": "pipeline"
+        },
+        {
+          "word": "protocols",
+          "def": "Agreed rules for interaction",
+          "syllables": 3,
+          "energy": "Standards, handshakes",
+          "singular": "protocol"
+        },
+        {
+          "word": "schemas",
+          "def": "Structural templates for data",
+          "syllables": 2,
+          "energy": "Blueprints, contracts",
+          "singular": "schema"
+        },
+        {
+          "word": "endpoints",
+          "def": "Connection points for communication",
+          "syllables": 2,
+          "energy": "Interfaces, termini",
+          "singular": "endpoint"
+        },
+        {
+          "word": "repositories",
+          "def": "Storage locations",
+          "syllables": 5,
+          "energy": "Archives, vaults",
+          "singular": "repository"
+        },
+        {
+          "word": "payloads",
+          "def": "Data being transmitted",
+          "syllables": 2,
+          "energy": "Cargo, message content",
+          "singular": "payload"
+        },
+        {
+          "word": "stacks",
+          "def": "Layered technology combinations",
+          "syllables": 1,
+          "energy": "Full systems, vertical integration",
+          "singular": "stack"
+        },
+        {
+          "word": "membranes",
+          "def": "Semi-permeable boundaries",
+          "syllables": 3,
+          "energy": "Selective barriers",
+          "singular": "membrane"
+        },
+        {
+          "word": "substrates",
+          "def": "Underlying supporting layers",
+          "syllables": 3,
+          "energy": "Foundations, bases",
+          "singular": "substrate"
+        },
+        {
+          "word": "scaffolding",
+          "def": "Temporary support structures",
+          "syllables": 3,
+          "energy": "Enabling frameworks",
+          "singular": "scaffolding"
+        },
+        {
+          "word": "lattices",
+          "def": "Regular geometric frameworks",
+          "syllables": 3,
+          "energy": "Crystal structures, grids",
+          "singular": "lattice"
+        },
+        {
+          "word": "conduits",
+          "def": "Channels for transmission",
+          "syllables": 2,
+          "energy": "Pipes, pathways",
+          "singular": "conduit"
+        },
+        {
+          "word": "buffers",
+          "def": "Intermediate storage",
+          "syllables": 2,
+          "energy": "Shock absorbers, caches",
+          "singular": "buffer"
+        },
+        {
+          "word": "gateways",
+          "def": "Entry points between systems",
+          "syllables": 3,
+          "singular": "gateway"
+        },
+        {
+          "word": "sandboxes",
+          "def": "Isolated testing environments",
+          "syllables": 3,
+          "energy": "Safe experimentation zones",
+          "singular": "sandbox"
+        }
+      ]
+    },
+    "geometry": {
+      "family": "science",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "manifolds",
+          "def": "Locally flat, globally curved surfaces",
+          "syllables": 3,
+          "energy": "Higher-dimensional surfaces",
+          "singular": "manifold"
+        },
+        {
+          "word": "tensors",
+          "def": "Multi-dimensional arrays",
+          "syllables": 2,
+          "energy": "Generalized vectors/matrices",
+          "singular": "tensor"
+        },
+        {
+          "word": "theorems",
+          "def": "Proven mathematical statements",
+          "syllables": 2,
+          "energy": "Established truths",
+          "singular": "theorem"
+        },
+        {
+          "word": "conjectures",
+          "def": "Unproven suspected truths",
+          "syllables": 4,
+          "energy": "Mathematical hypotheses",
+          "singular": "conjecture"
+        },
+        {
+          "word": "polytopes",
+          "def": "Multi-dimensional shapes",
+          "syllables": 4,
+          "energy": "Higher-D polyhedra",
+          "singular": "polytope"
+        },
+        {
+          "word": "gradients",
+          "def": "Rates of change",
+          "syllables": 2,
+          "energy": "Slopes, derivatives",
+          "singular": "gradient"
+        },
+        {
+          "word": "vectors",
+          "def": "Magnitude and direction",
+          "syllables": 2,
+          "energy": "Arrows, forces",
+          "singular": "vector"
+        },
+        {
+          "word": "trajectories",
+          "def": "Paths through space",
+          "syllables": 4,
+          "energy": "Courses, arcs",
+          "singular": "trajectory"
+        },
+        {
+          "word": "proofs",
+          "def": "Logical demonstrations",
+          "syllables": 1,
+          "energy": "Rigorous arguments",
+          "singular": "proof"
+        },
+        {
+          "word": "axioms",
+          "def": "Self-evident assumptions",
+          "syllables": 2,
+          "energy": "Foundational truths",
+          "singular": "axiom"
+        },
+        {
+          "word": "invariants",
+          "def": "Unchanged properties",
+          "syllables": 3,
+          "energy": "Conserved quantities",
+          "singular": "invariant"
+        },
+        {
+          "word": "symmetries",
+          "def": "Sameness under transformation",
+          "syllables": 3,
+          "energy": "Balance, conservation",
+          "singular": "symmetry"
+        },
+        {
+          "word": "singularities",
+          "def": "Where rules break down",
+          "syllables": 5,
+          "energy": "Infinities, discontinuities",
+          "singular": "singularity"
+        },
+        {
+          "word": "matrices",
+          "def": "Rectangular arrays",
+          "syllables": 3,
+          "singular": "matrix"
+        },
+        {
+          "word": "fields",
+          "def": "Spaces with operations",
+          "syllables": 1,
+          "weak": true,
+          "singular": "field"
+        },
+        {
+          "word": "lemmas",
+          "def": "Helper theorems, stepping stones",
+          "syllables": 2,
+          "energy": "Supporting proofs",
+          "singular": "lemma"
+        },
+        {
+          "word": "corollaries",
+          "def": "Consequences of theorems",
+          "syllables": 4,
+          "energy": "Derived truths",
+          "singular": "corollary"
+        }
+      ]
+    },
+    "phenomena": {
+      "family": "science",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "resonances",
+          "def": "Reinforced vibrations",
+          "syllables": 4,
+          "energy": "Amplification, harmony",
+          "singular": "resonance"
+        },
+        {
+          "word": "emanations",
+          "def": "Things flowing outward",
+          "syllables": 4,
+          "energy": "Radiations, influences",
+          "singular": "emanation"
+        },
+        {
+          "word": "confluences",
+          "def": "Where streams meet",
+          "syllables": 3,
+          "energy": "Convergences, junctions",
+          "singular": "confluence"
+        },
+        {
+          "word": "frequencies",
+          "def": "Rates of repetition",
+          "syllables": 3,
+          "energy": "Vibrations, cycles",
+          "singular": "frequency"
+        },
+        {
+          "word": "fluctuations",
+          "def": "Irregular variations",
+          "syllables": 3,
+          "energy": "Noise, volatility",
+          "singular": "fluctuation"
+        },
+        {
+          "word": "perturbations",
+          "def": "Small disturbances",
+          "syllables": 4,
+          "energy": "Nudges, disruptions",
+          "singular": "perturbation"
+        },
+        {
+          "word": "anomalies",
+          "def": "Deviations from expected",
+          "syllables": 4,
+          "energy": "Outliers, mysteries",
+          "singular": "anomaly"
+        },
+        {
+          "word": "cascades",
+          "def": "Sequential chain reactions",
+          "syllables": 3,
+          "energy": "Domino effects",
+          "singular": "cascade"
+        },
+        {
+          "word": "harmonics",
+          "def": "Frequency overtones",
+          "syllables": 3,
+          "energy": "Resonant layers",
+          "singular": "harmonic"
+        },
+        {
+          "word": "turbulence",
+          "def": "Chaotic fluid motion",
+          "syllables": 3,
+          "energy": "Unpredictable flow",
+          "singular": "turbulence"
+        },
+        {
+          "word": "phase transitions",
+          "def": "Sudden state changes",
+          "syllables": 4,
+          "energy": "Threshold crossings",
+          "singular": "phase transition"
+        },
+        {
+          "word": "feedback loops",
+          "def": "Output affecting input",
+          "syllables": 3,
+          "energy": "Self-reinforcing cycles",
+          "singular": "feedback loop"
+        },
+        {
+          "word": "emergences",
+          "def": "Complex from simple",
+          "syllables": 4,
+          "energy": "Arising, self-organization",
+          "singular": "emergence"
+        },
+        {
+          "word": "oscillations",
+          "def": "Back-and-forth movements",
+          "syllables": 4,
+          "singular": "oscillation"
+        },
+        {
+          "word": "equilibria",
+          "def": "States of balance",
+          "syllables": 4,
+          "singular": "equilibrium"
+        },
+        {
+          "word": "interference",
+          "def": "Wave patterns combining",
+          "syllables": 4,
+          "energy": "Reinforcement/cancellation",
+          "singular": "interference"
+        },
+        {
+          "word": "transients",
+          "def": "Brief, passing phenomena",
+          "syllables": 2,
+          "energy": "Temporary spikes",
+          "singular": "transient"
+        }
+      ]
+    },
+    "abstractions": {
+      "family": "meaning",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "ontologies",
+          "def": "Systems defining what exists",
+          "syllables": 4,
+          "energy": "Being, categories of existence",
+          "singular": "ontology"
+        },
+        {
+          "word": "epistemologies",
+          "def": "Theories of knowledge",
+          "syllables": 6,
+          "energy": "How we know what we know",
+          "singular": "epistemology"
+        },
+        {
+          "word": "dialectics",
+          "def": "Opposing ideas creating synthesis",
+          "syllables": 3,
+          "energy": "Thesis-antithesis dynamics",
+          "singular": "dialectic"
+        },
+        {
+          "word": "taxonomies",
+          "def": "Classification systems",
+          "syllables": 4,
+          "energy": "Categorization hierarchies",
+          "singular": "taxonomy"
+        },
+        {
+          "word": "paradigms",
+          "def": "Dominant frameworks",
+          "syllables": 3,
+          "energy": "Mental models, worldviews",
+          "singular": "paradigm"
+        },
+        {
+          "word": "heuristics",
+          "def": "Problem-solving rules",
+          "syllables": 3,
+          "energy": "Rules of thumb, shortcuts",
+          "singular": "heuristic"
+        },
+        {
+          "word": "frameworks",
+          "def": "Structural approaches",
+          "syllables": 3,
+          "weak": true,
+          "energy": "Mental scaffolding",
+          "singular": "framework"
+        },
+        {
+          "word": "narratives",
+          "def": "Story structures",
+          "syllables": 4,
+          "energy": "Plots, accounts",
+          "singular": "narrative"
+        },
+        {
+          "word": "modalities",
+          "def": "Ways of being/doing",
+          "syllables": 4,
+          "energy": "Forms, channels",
+          "singular": "modality"
+        },
+        {
+          "word": "affordances",
+          "def": "Action possibilities",
+          "syllables": 4,
+          "energy": "What things let you do",
+          "singular": "affordance"
+        },
+        {
+          "word": "thresholds",
+          "def": "Points of transition",
+          "syllables": 2,
+          "energy": "Boundaries, limits",
+          "singular": "threshold"
+        },
+        {
+          "word": "attractors",
+          "def": "States systems tend toward",
+          "syllables": 3,
+          "energy": "Equilibria, basins",
+          "singular": "attractor"
+        },
+        {
+          "word": "spectra",
+          "def": "Ranges of qualities",
+          "syllables": 2,
+          "singular": "spectrum"
+        },
+        {
+          "word": "hierarchies",
+          "def": "Ranked organization",
+          "syllables": 3,
+          "singular": "hierarchy"
+        },
+        {
+          "word": "networks",
+          "def": "Interconnected systems",
+          "syllables": 2,
+          "weak": true,
+          "singular": "network"
+        },
+        {
+          "word": "valences",
+          "def": "Attractive or repulsive qualities",
+          "syllables": 3,
+          "energy": "Emotional charges",
+          "singular": "valence"
+        },
+        {
+          "word": "basins",
+          "def": "Regions draining to common point",
+          "syllables": 2,
+          "energy": "Catchment areas",
+          "singular": "basin"
+        }
+      ]
+    },
+    "alchemical": {
+      "family": "mystic",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "tinctures",
+          "def": "Transforming essences",
+          "syllables": 3,
+          "singular": "tincture"
+        },
+        {
+          "word": "elixirs",
+          "def": "Magical substances",
+          "syllables": 3,
+          "singular": "elixir"
+        },
+        {
+          "word": "crucibles",
+          "def": "Transformation vessels",
+          "syllables": 3,
+          "singular": "crucible"
+        },
+        {
+          "word": "retorts",
+          "def": "Distillation vessels",
+          "syllables": 2,
+          "singular": "retort"
+        },
+        {
+          "word": "quintessences",
+          "def": "Pure essences",
+          "syllables": 4,
+          "singular": "quintessence"
+        },
+        {
+          "word": "prima materia",
+          "def": "Original substance",
+          "syllables": 5,
+          "singular": "prima materia"
+        },
+        {
+          "word": "philosopher's stones",
+          "def": "Perfect transformation agents",
+          "syllables": 6,
+          "singular": "philosopher's stone"
+        },
+        {
+          "word": "transmutations",
+          "def": "Fundamental changes",
+          "syllables": 4,
+          "singular": "transmutation"
+        },
+        {
+          "word": "calcinations",
+          "def": "Burning to powder",
+          "syllables": 4,
+          "singular": "calcination"
+        },
+        {
+          "word": "dissolutions",
+          "def": "Breaking down",
+          "syllables": 4,
+          "singular": "dissolution"
+        }
+      ]
+    },
+    "astronomical": {
+      "family": "cosmic",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "constellations",
+          "def": "Patterns of stars",
+          "syllables": 4,
+          "singular": "constellation"
+        },
+        {
+          "word": "nebulae",
+          "def": "Gas and dust clouds",
+          "syllables": 3,
+          "singular": "nebula"
+        },
+        {
+          "word": "pulsars",
+          "def": "Rotating neutron stars",
+          "syllables": 2,
+          "singular": "pulsar"
+        },
+        {
+          "word": "quasars",
+          "def": "Luminous distant objects",
+          "syllables": 2,
+          "singular": "quasar"
+        },
+        {
+          "word": "black holes",
+          "def": "Extreme gravity regions",
+          "syllables": 3,
+          "singular": "black hole"
+        },
+        {
+          "word": "supernovae",
+          "def": "Exploding stars",
+          "syllables": 4,
+          "singular": "supernova"
+        },
+        {
+          "word": "orbits",
+          "def": "Curved paths",
+          "syllables": 2,
+          "singular": "orbit"
+        },
+        {
+          "word": "eclipses",
+          "def": "Body blocking another",
+          "syllables": 3,
+          "singular": "eclipse"
+        },
+        {
+          "word": "transits",
+          "def": "Passing across face",
+          "syllables": 2,
+          "singular": "transit"
+        },
+        {
+          "word": "conjunctions",
+          "def": "Celestial meetings",
+          "syllables": 3,
+          "singular": "conjunction"
+        }
+      ]
+    },
+    "startup": {
+      "family": "corporate",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "runways",
+          "def": "Time until money runs out",
+          "syllables": 2,
+          "singular": "runway"
+        },
+        {
+          "word": "pivots",
+          "def": "Direction changes",
+          "syllables": 2,
+          "singular": "pivot"
+        },
+        {
+          "word": "MVPs",
+          "def": "Minimum viable products",
+          "syllables": 1,
+          "singular": "MVP"
+        },
+        {
+          "word": "burn rates",
+          "def": "Spending velocity",
+          "syllables": 3,
+          "singular": "burn rate"
+        },
+        {
+          "word": "cap tables",
+          "def": "Ownership records",
+          "syllables": 3,
+          "singular": "cap table"
+        },
+        {
+          "word": "term sheets",
+          "def": "Investment conditions",
+          "syllables": 2,
+          "singular": "term sheet"
+        },
+        {
+          "word": "pitch decks",
+          "def": "Investment presentations",
+          "syllables": 2,
+          "singular": "pitch deck"
+        },
+        {
+          "word": "moats",
+          "def": "Competitive advantages",
+          "syllables": 1,
+          "singular": "moat"
+        },
+        {
+          "word": "hockey sticks",
+          "def": "Growth curves",
+          "syllables": 3,
+          "singular": "hockey stick"
+        },
+        {
+          "word": "unicorns",
+          "def": "Billion-dollar startups",
+          "syllables": 3,
+          "singular": "unicorn"
+        }
+      ]
+    },
+    "selfHelp": {
+      "family": "psyche",
+      "sensitive": false,
+      "entries": [
+        {
+          "word": "breakthroughs",
+          "def": "Advances past barriers",
+          "syllables": 2,
+          "singular": "breakthrough"
+        },
+        {
+          "word": "triggers",
+          "def": "Activating stimuli",
+          "syllables": 2,
+          "singular": "trigger"
+        },
+        {
+          "word": "boundaries",
+          "def": "Personal limits",
+          "syllables": 3,
+          "singular": "boundary"
+        },
+        {
+          "word": "shadows",
+          "def": "Disowned psyche parts",
+          "syllables": 2,
+          "singular": "shadow"
+        },
+        {
+          "word": "inner children",
+          "def": "Wounded younger selves",
+          "syllables": 4,
+          "singular": "inner child"
+        },
+        {
+          "word": "limiting beliefs",
+          "def": "Constraining assumptions",
+          "syllables": 5,
+          "singular": "limiting belief"
+        },
+        {
+          "word": "affirmations",
+          "def": "Positive statements",
+          "syllables": 4,
+          "singular": "affirmation"
+        },
+        {
+          "word": "intentions",
+          "def": "Conscious aims",
+          "syllables": 3,
+          "singular": "intention"
+        },
+        {
+          "word": "vibrations",
+          "def": "Energetic frequencies",
+          "syllables": 3,
+          "weak": true,
+          "singular": "vibration"
+        },
+        {
+          "word": "flow states",
+          "def": "Optimal engagement",
+          "syllables": 3,
+          "singular": "flow state"
+        }
+      ]
+    }
+  },
+  "seeds": [
+    {
+      "text": "Tell me about a time you found yourself tessellating Byzantine ontologies.",
+      "category": "classic",
+      "domains": [
+        "physics",
+        "crypto",
+        "abstractions"
+      ],
+      "whyItWorks": "Geometric verb meets trust-architecture meets philosophy - triple domain clash"
+    },
+    {
+      "text": "How would you describe your experience with Riemannian data lakes?",
+      "category": "classic",
+      "domains": [
+        "physics",
+        "corporate"
+      ],
+      "whyItWorks": "Einstein's curved space meets corporate buzzword - scholarly nonsense"
+    },
+    {
+      "text": "What if the Hermetic pipelines required sublimating?",
+      "category": "classic",
+      "domains": [
+        "ancient",
+        "corporate",
+        "transformation"
+      ],
+      "whyItWorks": "Alchemical tradition meets DevOps meets chemistry - mystical engineering"
+    },
+    {
+      "text": "On a scale of 1 to 10, how would you rate your Pharaonic tensor parsing?",
+      "category": "classic",
+      "domains": [
+        "ancient",
+        "physics",
+        "process"
+      ],
+      "whyItWorks": "Corporate assessment format meets Egyptian grandeur meets linear algebra"
+    },
+    {
+      "text": "Walk me through your process for decanting zero-knowledge emanations.",
+      "category": "classic",
+      "domains": [
+        "transformation",
+        "crypto",
+        "ancient"
+      ],
+      "whyItWorks": "Wine terminology meets cryptography meets Gnostic cosmology"
+    },
+    {
+      "text": "Are you comfortable intuiting non-Euclidean resonances?",
+      "category": "classic",
+      "domains": [
+        "perception",
+        "physics",
+        "phenomena"
+      ],
+      "whyItWorks": "Soft verb meets hard geometry meets vibes - epistemological vertigo"
+    },
+    {
+      "text": "What does amortizing Delphic trajectories mean to you?",
+      "category": "classic",
+      "domains": [
+        "corporate",
+        "ancient",
+        "geometry"
+      ],
+      "whyItWorks": "Accounting meets oracle prophecy meets physics - financial mysticism"
+    },
+    {
+      "text": "You gotta be navigating porcine narratives.",
+      "category": "classic",
+      "domains": [
+        "movement",
+        "wildcard",
+        "abstractions"
+      ],
+      "whyItWorks": "The original - 'porcine' comes from nowhere and destabilizes everything"
+    },
+    {
+      "text": "In the end, we are all just orbiting strange attractors.",
+      "category": "classic",
+      "domains": [
+        "movement",
+        "physics"
+      ],
+      "whyItWorks": "Existential truth hiding as chaos theory - actually profound"
+    },
+    {
+      "text": "Before merkleized truth, there was only trusting.",
+      "category": "classic",
+      "domains": [
+        "crypto",
+        "abstractions",
+        "perception"
+      ],
+      "whyItWorks": "Origin myth format meets cryptographic verification - blockchain genesis story"
+    },
+    {
+      "text": "How might you approach fiduciary obligations in a seven-generation planning environment?",
+      "category": "indigenous"
+    },
+    {
+      "text": "Tell me about your experience with quarterly reciprocity metrics.",
+      "category": "indigenous"
+    },
+    {
+      "text": "Walk me through tokenizing ancestral consensus.",
+      "category": "indigenous"
+    },
+    {
+      "text": "Before velocity metrics, there was only listening.",
+      "category": "indigenous"
+    },
+    {
+      "text": "Tell me about achieving rubedo in quarterly planning.",
+      "category": "alchemy"
+    },
+    {
+      "text": "How would you describe the nigredo phase of organizational restructuring?",
+      "category": "alchemy"
+    },
+    {
+      "text": "What's your relationship with mercurial stakeholder dynamics?",
+      "category": "alchemy"
+    },
+    {
+      "text": "Are you comfortable calcining legacy assumptions?",
+      "category": "alchemy"
+    },
+    {
+      "text": "Walk me through transmuting attention into value.",
+      "category": "alchemy"
+    },
+    {
+      "text": "How do you verify the signified in a trustless environment?",
+      "category": "semiotics"
+    },
+    {
+      "text": "Tell me about parsing polysemous stakeholder signals.",
+      "category": "semiotics"
+    },
+    {
+      "text": "Are you comfortable with hermeneutic consensus mechanisms?",
+      "category": "semiotics"
+    },
+    {
+      "text": "How do you navigate squared stakeholder aspects?",
+      "category": "astrology"
+    },
+    {
+      "text": "Tell me about operating during a void-of-course sprint.",
+      "category": "astrology"
+    },
+    {
+      "text": "What's your approach to retrograde product launches?",
+      "category": "astrology"
+    },
+    {
+      "text": "Are you comfortable with Saturnian deadline structures?",
+      "category": "astrology"
+    },
+    {
+      "text": "How would you describe red-shifted market signals?",
+      "category": "astronomy"
+    },
+    {
+      "text": "What if the strategy entered a nebular phase?",
+      "category": "astronomy"
+    },
+    {
+      "text": "How do you handle supersaturated market conditions?",
+      "category": "chemistry"
+    },
+    {
+      "text": "Tell me about a time the team chemistry became immiscible.",
+      "category": "chemistry"
+    },
+    {
+      "text": "What's your experience with catalytic leadership?",
+      "category": "chemistry"
+    },
+    {
+      "text": "Are you comfortable with exothermic growth phases?",
+      "category": "chemistry"
+    },
+    {
+      "text": "Tell me about adapting vestigial organizational structures.",
+      "category": "darwinism"
+    },
+    {
+      "text": "How do you survive extinction-level market conditions?",
+      "category": "darwinism"
+    },
+    {
+      "text": "Are you a symbiotic or parasitic vendor partner?",
+      "category": "darwinism"
+    },
+    {
+      "text": "How do you extend runway while maintaining burn rate velocity?",
+      "category": "startup"
+    },
+    {
+      "text": "Tell me about pivoting your ontological assumptions.",
+      "category": "startup"
+    },
+    {
+      "text": "What's your experience with ramen-profitable consciousness?",
+      "category": "startup"
+    },
+    {
+      "text": "Are you comfortable blitzscaling intimacy?",
+      "category": "startup"
+    },
+    {
+      "text": "How do you manifest Byzantine consensus?",
+      "category": "selfHelp"
+    },
+    {
+      "text": "What's your relationship with abundance-minded tokenomics?",
+      "category": "selfHelp"
+    },
+    {
+      "text": "Are you operating from a trauma-informed architecture?",
+      "category": "selfHelp"
+    },
+    {
+      "text": "How might you approach hovering in a stochastic axiom environment?",
+      "category": "classic-v1",
+      "domains": [
+        "movement",
+        "physics",
+        "geometry"
+      ],
+      "whyItWorks": "Physical suspension meets probability meets foundational logic"
+    },
+    {
+      "text": "You gotta be optimizing homomorphic encryption.",
+      "category": "classic-v1",
+      "domains": [
+        "process",
+        "crypto",
+        "crypto"
+      ],
+      "whyItWorks": "Pure tech jargon that almost makes sense but doesn't"
+    },
+    {
+      "text": "Describe your relationship with meridian affordances.",
+      "category": "classic-v1",
+      "domains": [
+        "cosmic",
+        "abstractions"
+      ],
+      "whyItWorks": "Astronomical positioning meets design theory - spatial UX"
+    },
+    {
+      "text": "What first drew you to crystallizing stakeholder resonances?",
+      "category": "classic-v1",
+      "domains": [
+        "transformation",
+        "corporate",
+        "phenomena"
+      ],
+      "whyItWorks": "Chemistry meets consulting meets physics - solidifying vibes"
+    },
+    {
+      "text": "If topological thresholds were to bifurcate, what would you do?",
+      "category": "classic-v1",
+      "domains": [
+        "physics",
+        "abstractions",
+        "movement"
+      ],
+      "whyItWorks": "Rubber-sheet geometry meets limits meets splitting - mathematical crisis"
+    },
+    {
+      "text": "How long have you been calibrating geomagnetic feedback loops?",
+      "category": "classic-v1",
+      "domains": [
+        "process",
+        "cosmic",
+        "phenomena"
+      ],
+      "whyItWorks": "Technical verb meets Earth science meets systems theory"
+    },
+    {
+      "text": "Sources report hallucinated consensus cascading detected in governance sector.",
+      "category": "classic-v1",
+      "domains": [
+        "zeitgeist",
+        "crypto",
+        "phenomena",
+        "corporate"
+      ],
+      "whyItWorks": "AI terminology meets blockchain meets news format - meta-commentary"
+    },
+    {
+      "text": "The future belongs to those who distill Sumerian invariants.",
+      "category": "classic-v1",
+      "domains": [
+        "transformation",
+        "ancient",
+        "geometry"
+      ],
+      "whyItWorks": "Purification meets oldest civilization meets mathematical constants"
+    },
+    {
+      "text": "Experts warn of Byzantine scaffolding calcifying by Q3.",
+      "category": "classic-v1",
+      "domains": [
+        "crypto",
+        "infrastructure",
+        "transformation",
+        "corporate"
+      ],
+      "whyItWorks": "Trust systems meets construction meets fossilization meets quarterly planning"
+    },
+    {
+      "text": "What is the relationship between composable ontologies and Chaldean frequencies?",
+      "category": "classic-v1",
+      "domains": [
+        "crypto",
+        "abstractions",
+        "ancient",
+        "phenomena"
+      ],
+      "whyItWorks": "DeFi building blocks meets philosophy meets Babylonian astrology meets vibrations"
+    },
+    {
+      "text": "You gotta be contemplating intergalactic vectors.",
+      "category": "classic-v1",
+      "domains": [
+        "perception",
+        "cosmic",
+        "geometry"
+      ],
+      "whyItWorks": "Meditative verb meets vast scale meets mathematics - cosmic math meditation"
+    },
+    {
+      "text": "Tell me about a time you found yourself metabolizing regulatory membranes.",
+      "category": "classic-v1",
+      "domains": [
+        "transformation",
+        "corporate",
+        "infrastructure"
+      ],
+      "whyItWorks": "Biological process meets compliance meets barriers - organic bureaucracy"
+    },
+    {
+      "text": "How has quantum-entangled governance changed the way you decide?",
+      "category": "classic-v1",
+      "domains": [
+        "physics",
+        "abstractions",
+        "perception"
+      ],
+      "whyItWorks": "Spooky action meets politics meets cognition - decision theory weirdness"
+    },
+    {
+      "text": "What tools do you use when serializing Gnostic payloads?",
+      "category": "classic-v1",
+      "domains": [
+        "process",
+        "ancient",
+        "infrastructure"
+      ],
+      "whyItWorks": "Data formatting meets secret knowledge meets transmission - heretical DevOps"
+    },
+    {
+      "text": "Imagine you're precipitating through liquidity pools. What's your first move?",
+      "category": "classic-v1",
+      "domains": [
+        "movement",
+        "crypto",
+        "crypto"
+      ],
+      "whyItWorks": "Chemistry verb meets DeFi - falling out of financial solution"
+    },
+    {
+      "text": "Markets respond to Delphic signals with oscillating.",
+      "category": "classic-v1",
+      "domains": [
+        "corporate",
+        "ancient",
+        "movement"
+      ],
+      "whyItWorks": "Financial news format meets oracle meets physics - prophetic market analysis"
+    },
+    {
+      "text": "Are you comfortable invoking Hamiltonian symmetries?",
+      "category": "classic-v1",
+      "domains": [
+        "perception",
+        "physics",
+        "physics"
+      ],
+      "whyItWorks": "Soft assessment meets energy physics meets conservation laws"
+    },
+    {
+      "text": "Where do you see enshittified affordances in five years?",
+      "category": "classic-v1",
+      "domains": [
+        "zeitgeist",
+        "abstractions"
+      ],
+      "whyItWorks": "Platform decay terminology meets design theory meets corporate futurism"
+    },
+    {
+      "text": "What's your preferred method for annealing organizational trauma?",
+      "category": "classic-v1",
+      "domains": [
+        "transformation",
+        "corporate",
+        "corporate"
+      ],
+      "whyItWorks": "Metallurgy meets HR meets therapy - heat-treating corporate wounds"
+    },
+    {
+      "text": "You gotta be witnessing paradigm collapse.",
+      "category": "classic-v1",
+      "domains": [
+        "perception",
+        "abstractions",
+        "movement"
+      ],
+      "whyItWorks": "Observation meets worldview meets destruction - philosophical rubbernecking"
+    }
+  ],
+  "templates": [
+    {
+      "id": "t01",
+      "type": "experience",
+      "template": "Tell me about a time you found yourself [VERB:ger] [MODIFIER] [NOUN]...",
+      "mood": "Reflective, probing"
+    },
+    {
+      "id": "t02",
+      "type": "experience",
+      "template": "Walk me through your process for [VERB:ger] [MODIFIER] [NOUN].",
+      "mood": "Methodical, detailed"
+    },
+    {
+      "id": "t03",
+      "type": "experience",
+      "template": "How would you describe your relationship with [MODIFIER] [NOUN]?",
+      "mood": "Personal, philosophical"
+    },
+    {
+      "id": "t04",
+      "type": "experience",
+      "template": "What first drew you to [VERB:ger] [MODIFIER] [NOUN]?",
+      "mood": "Origin story, motivational"
+    },
+    {
+      "id": "t05",
+      "type": "experience",
+      "template": "Describe a challenge you faced while [VERB:ger] [MODIFIER] [NOUN].",
+      "mood": "Problem-solving, narrative"
+    },
+    {
+      "id": "t06",
+      "type": "hypothetical",
+      "template": "What if the [MODIFIER] [NOUN] required [VERB:ger]?",
+      "mood": "Speculative, testing"
+    },
+    {
+      "id": "t07",
+      "type": "hypothetical",
+      "template": "Imagine you're [VERB:ger] [MODIFIER] [NOUN]. What's your first move?",
+      "mood": "Strategic, action-oriented"
+    },
+    {
+      "id": "t08",
+      "type": "hypothetical",
+      "template": "How might you approach [VERB:ger] in a [MODIFIER] [NOUN:sing] environment?",
+      "mood": "Adaptive, contextual"
+    },
+    {
+      "id": "t09",
+      "type": "hypothetical",
+      "template": "If [MODIFIER] [NOUN] were to [VERB:base], what would you do?",
+      "mood": "Contingency planning"
+    },
+    {
+      "id": "t10",
+      "type": "hypothetical",
+      "template": "How would you adapt if the [MODIFIER] [NOUN] failed?",
+      "mood": "Failure mode, resilience"
+    },
+    {
+      "id": "t11",
+      "type": "competency",
+      "template": "On a scale of 1 to 10, how would you rate your [MODIFIER] [NOUN:sing] [VERB:ger]?",
+      "mood": "Self-assessment, quantified"
+    },
+    {
+      "id": "t12",
+      "type": "competency",
+      "template": "Are you comfortable [VERB:ger] [MODIFIER] [NOUN]?",
+      "mood": "Direct, binary"
+    },
+    {
+      "id": "t13",
+      "type": "competency",
+      "template": "What tools do you use when [VERB:ger] [MODIFIER] [NOUN]?",
+      "mood": "Practical, technical"
+    },
+    {
+      "id": "t14",
+      "type": "competency",
+      "template": "How long have you been [VERB:ger] [MODIFIER] [NOUN]?",
+      "mood": "Experience-measuring"
+    },
+    {
+      "id": "t15",
+      "type": "competency",
+      "template": "What's your preferred method for [VERB:ger] [MODIFIER] [NOUN]?",
+      "mood": "Methodology, preference"
+    },
+    {
+      "id": "t16",
+      "type": "philosophical",
+      "template": "Why do you believe [MODIFIER] [NOUN] exists?",
+      "mood": "Ontological, deep"
+    },
+    {
+      "id": "t17",
+      "type": "philosophical",
+      "template": "What does [VERB:ger] [MODIFIER] [NOUN] mean to you?",
+      "mood": "Personal meaning, values"
+    },
+    {
+      "id": "t18",
+      "type": "philosophical",
+      "template": "How has [MODIFIER] [NOUN] changed the way you [VERB:base]?",
+      "mood": "Transformative, growth"
+    },
+    {
+      "id": "t19",
+      "type": "philosophical",
+      "template": "What is the relationship between [MODIFIER] [NOUN] and [MODIFIER2] [NOUN2]?",
+      "mood": "Comparative, synthetic"
+    },
+    {
+      "id": "t20",
+      "type": "philosophical",
+      "template": "Where do you see [MODIFIER] [NOUN] in five years?",
+      "mood": "Futurist, speculative"
+    },
+    {
+      "id": "t21",
+      "type": "declarative",
+      "template": "You gotta be [VERB:ger] [MODIFIER] [NOUN].",
+      "mood": "Imperative, motivational"
+    },
+    {
+      "id": "t22",
+      "type": "declarative",
+      "template": "The future belongs to those who [VERB:base] [MODIFIER] [NOUN].",
+      "mood": "Prophetic, aspirational"
+    },
+    {
+      "id": "t23",
+      "type": "declarative",
+      "template": "[MODIFIER] [NOUN] is just [VERB:ger] with extra steps.",
+      "mood": "Reductive, cynical-comic"
+    },
+    {
+      "id": "t24",
+      "type": "declarative",
+      "template": "Before [MODIFIER] [NOUN], there was only [VERB:ger].",
+      "mood": "Origin myth, primordial"
+    },
+    {
+      "id": "t25",
+      "type": "declarative",
+      "template": "In the end, we are all just [VERB:ger] [MODIFIER] [NOUN].",
+      "mood": "Existential, unifying"
+    },
+    {
+      "id": "t26",
+      "type": "news",
+      "template": "In light of recent [MODIFIER] [NOUN] developments, how are you [VERB:ger]?",
+      "mood": "Current events, personal impact"
+    },
+    {
+      "id": "t27",
+      "type": "news",
+      "template": "Sources report [MODIFIER] [NOUN] [VERB:ger] detected in [SECTOR] sector.",
+      "mood": "Breaking news parody"
+    },
+    {
+      "id": "t28",
+      "type": "news",
+      "template": "Experts warn of [MODIFIER] [NOUN] [VERB:ger] by Q[QUARTER].",
+      "mood": "Forecast, concern"
+    },
+    {
+      "id": "t29",
+      "type": "news",
+      "template": "Markets respond to [MODIFIER] [NOUN] with [VERB:ger].",
+      "mood": "Financial news parody"
+    },
+    {
+      "id": "t30",
+      "type": "news",
+      "template": "After [MODIFIER] [NOUN] announcement, [VERB:ger] intensifies.",
+      "mood": "Reaction coverage"
+    },
+    {
+      "id": "t31",
+      "type": "koan",
+      "template": "What is the sound of [MODIFIER] [NOUN] [VERB:ger]?",
+      "mood": "Zen paradox"
+    },
+    {
+      "id": "t32",
+      "type": "prophecy",
+      "template": "Those who [VERB:base] [MODIFIER] [NOUN] shall inherit the [NOUN2].",
+      "mood": "Biblical, prophetic"
+    }
+  ],
+  "mixingGuide": [
+    {
+      "pairing": [
+        "crypto",
+        "ancient"
+      ],
+      "effect": "Financial mysticism, blockchain shamanism",
+      "examples": "merkleized prophecies, bonded oracles",
+      "energy": "Sacred economics"
+    },
+    {
+      "pairing": [
+        "crypto",
+        "physics"
+      ],
+      "effect": "Technical precision, rigorous finance",
+      "examples": "stochastic consensus, eigenvalue staking",
+      "energy": "Quant energy"
+    },
+    {
+      "pairing": [
+        "crypto",
+        "cosmic"
+      ],
+      "effect": "Planetary scale finance, cosmic markets",
+      "examples": "celestial liquidity, orbital yields",
+      "energy": "Space capitalism"
+    },
+    {
+      "pairing": [
+        "crypto",
+        "corporate"
+      ],
+      "effect": "Buzzword density maximized",
+      "examples": "scalable consensus, enterprise-grade staking",
+      "energy": "Peak jargon"
+    },
+    {
+      "pairing": [
+        "crypto",
+        "zeitgeist"
+      ],
+      "effect": "Current events + blockchain",
+      "examples": "sanctioned protocols, hallucinated consensus",
+      "energy": "News cycle crypto"
+    },
+    {
+      "pairing": [
+        "physics",
+        "ancient"
+      ],
+      "effect": "Scholarly nonsense, academic mysticism",
+      "examples": "Ptolemaic manifolds, Sumerian theorems",
+      "energy": "Professor wizard"
+    },
+    {
+      "pairing": [
+        "physics",
+        "corporate"
+      ],
+      "effect": "Consultant physics, management science",
+      "examples": "leveraged gradients, synergistic tensors",
+      "energy": "McKinsey physics"
+    },
+    {
+      "pairing": [
+        "physics",
+        "cosmic"
+      ],
+      "effect": "Astrophysics, real science vibes",
+      "examples": "heliocentric vectors, galactic gradients",
+      "energy": "Actual astronomy (too coherent — use sparingly)"
+    },
+    {
+      "pairing": [
+        "physics",
+        "zeitgeist"
+      ],
+      "effect": "Pop science meets memes",
+      "examples": "vibes-based proofs, doom-scrolled theorems",
+      "energy": "Science Twitter"
+    },
+    {
+      "pairing": [
+        "ancient",
+        "corporate"
+      ],
+      "effect": "Management mysticism, executive shamanism",
+      "examples": "Hermetic synergies, Delphic deliverables",
+      "energy": "CEO as oracle"
+    },
+    {
+      "pairing": [
+        "ancient",
+        "cosmic"
+      ],
+      "effect": "Astrology, ancient astronomy",
+      "examples": "Chaldean alignments, zodiacal precession",
+      "energy": "Star wisdom (too coherent — use sparingly)"
+    },
+    {
+      "pairing": [
+        "ancient",
+        "zeitgeist"
+      ],
+      "effect": "Old meets extremely new",
+      "examples": "enshittified mysteries, AI-generated prophecies",
+      "energy": "Temporal whiplash"
+    },
+    {
+      "pairing": [
+        "corporate",
+        "cosmic"
+      ],
+      "effect": "Cosmic capitalism, space business",
+      "examples": "intergalactic markets, planetary scalability",
+      "energy": "Bezos energy"
+    },
+    {
+      "pairing": [
+        "corporate",
+        "zeitgeist"
+      ],
+      "effect": "Current business discourse",
+      "examples": "quietly-quitting synergies, vibes-based KPIs",
+      "energy": "LinkedIn posts (too plausible — near-miss zone)"
+    },
+    {
+      "pairing": [
+        "cosmic",
+        "zeitgeist"
+      ],
+      "effect": "Existential current events",
+      "examples": "climate-anxious orbits, doom-scrolled cosmos",
+      "energy": "Eco-doom scale"
+    },
+    {
+      "pairing": [
+        "*",
+        "*",
+        "*"
+      ],
+      "effect": "Maximum chaos, meaning overload",
+      "examples": "Byzantine Hermetic tensors, stochastic Pharaonic pipelines",
+      "energy": "Full surreal (triple+ combinations)"
+    }
+  ]
+}
