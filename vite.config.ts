@@ -7,4 +7,13 @@ import { defineConfig } from 'vite';
 // /meme-machine/ so the paths match production exactly.
 export default defineConfig({
   base: '/meme-machine/',
+  build: {
+    rollupOptions: {
+      // Multi-page: ship the app shell plus the generator debug/tuning page.
+      input: {
+        main: 'index.html',
+        debug: 'debug.html',
+      },
+    },
+  },
 });

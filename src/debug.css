@@ -1,0 +1,112 @@
+/* Stage 2 generator debug page. Not the app UI — a tuning surface for eyeballing
+   the comedy and the per-factor scores (collision / rhythm / form). */
+:root {
+  --bg-0: #0a0a0f;
+  --bg-1: #14141f;
+  --coral: #e94560; /* verbs */
+  --purple: #7b68ee; /* modifiers */
+  --cyan: #00d9ff; /* nouns */
+  --gold: #ffd700;
+  --ink: #e8e8f0;
+  --muted: #8a8aa0;
+  --line: rgba(255, 255, 255, 0.08);
+  --card: rgba(255, 255, 255, 0.03);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 2rem 1.25rem 4rem;
+  color: var(--ink);
+  background: linear-gradient(180deg, var(--bg-0), var(--bg-1));
+  font-family: 'Space Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+  line-height: 1.5;
+}
+
+.wrap { max-width: 60rem; margin: 0 auto; }
+
+header h1 { margin: 0 0 0.25rem; font-size: 1.35rem; letter-spacing: 0.02em; }
+header .sub { margin: 0; color: var(--muted); font-size: 0.8rem; }
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card);
+}
+
+button {
+  font: inherit;
+  font-weight: 700;
+  color: #fff;
+  background: var(--coral);
+  border: 0;
+  border-radius: 999px;
+  padding: 0.6rem 1.3rem;
+  cursor: pointer;
+}
+button:hover { filter: brightness(1.08); }
+
+.stats { color: var(--muted); font-size: 0.75rem; }
+.stats b { color: var(--ink); font-weight: 700; }
+.batch-mean { margin-left: auto; font-size: 0.8rem; color: var(--muted); }
+.batch-mean b { color: var(--gold); font-weight: 700; }
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  margin: 0.85rem 0;
+  background: var(--card);
+}
+
+.q { font-size: 1.12rem; line-height: 1.45; }
+.q .w { font-weight: 700; border-bottom: 1px dotted currentColor; cursor: help; }
+.q .w.verb { color: var(--coral); }
+.q .w.modifier { color: var(--purple); }
+.q .w.noun { color: var(--cyan); }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  margin: 0.7rem 0 0.5rem;
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.tag {
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+.tag.seed { color: var(--gold); border-color: rgba(255, 215, 0, 0.4); }
+
+.factors { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.6rem; margin-top: 0.6rem; }
+@media (max-width: 40rem) { .factors { grid-template-columns: 1fr; } }
+.factor { font-size: 0.7rem; color: var(--muted); }
+.factor .top { display: flex; justify-content: space-between; margin-bottom: 0.2rem; }
+.factor .top b { color: var(--ink); }
+.track { height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.07); overflow: hidden; }
+.fill { height: 100%; border-radius: 3px; }
+.fill.collision { background: var(--coral); }
+.fill.rhythm { background: var(--purple); }
+.fill.form { background: var(--cyan); }
+
+.readout { display: flex; align-items: baseline; gap: 0.75rem; margin-top: 0.75rem; flex-wrap: wrap; }
+.score { font-size: 0.8rem; color: var(--muted); }
+.score b { color: var(--ink); font-size: 1rem; }
+.resonance { font-size: 1.25rem; font-weight: 700; }
+.resonance.hi { color: #35d07f; }
+.resonance.mid { color: var(--gold); }
+.resonance.lo { color: var(--coral); }
+.verdict { color: var(--muted); font-size: 0.8rem; font-style: italic; }
