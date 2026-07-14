@@ -44,6 +44,16 @@ npm run dev        # http://localhost:5173/meme-machine/
 npm test           # Vitest: spec 02 §9 acceptance criteria + unit tests
 ```
 
+> **After adding a dependency on Windows, regenerate the lockfile from scratch:**
+>
+> ```bash
+> rm -rf node_modules package-lock.json && npm install && npm ci
+> ```
+>
+> An incremental `npm install <pkg>` on Windows prunes Linux-only optional deps
+> (`@emnapi/*`, `lightningcss-linux-*`, `@rolldown/binding-linux-*`) out of the lock, and
+> `npm ci` then fails on the Ubuntu CI runner. A clean install records every platform.
+
 ## Build & preview
 
 ```bash
