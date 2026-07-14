@@ -12,6 +12,8 @@
   --purple: #7b68ee; /* modifiers */
   --cyan: #00d9ff; /* nouns */
   --gold: #ffd700;
+  --go: #35d07f; /* "Hired" — the only green in the palette, so it reads as approval */
+  --go-dim: #2bb26c;
   --ink: #e0e0e0;
   --muted: #8a8aa0;
   --line: rgba(255, 255, 255, 0.09);
@@ -545,4 +547,160 @@ button {
   min-height: 36px;
   padding: 0.4rem 0.85rem;
   font-size: 0.68rem;
+}
+
+/* ── Curate (swipe voting) ───────────────────────────────────────────────── */
+.tabs {
+  flex-wrap: wrap;
+}
+.curate {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.curate-hint {
+  margin: 0;
+  text-align: center;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.deck {
+  display: flex;
+  min-height: 15rem;
+}
+.swipe-card {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 15rem;
+  padding: 1.9rem 1.5rem 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--card);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.04) inset,
+    0 20px 60px -30px rgba(123, 104, 238, 0.5);
+  cursor: grab;
+  /* Vertical panning stays with the page; horizontal drags come to us. */
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.swipe-card.in {
+  opacity: 1;
+  transform: none;
+}
+.swipe-card.dragging {
+  cursor: grabbing;
+  transition: none;
+}
+.swipe-card.voted {
+  pointer-events: none;
+}
+.swipe-card.exit-right {
+  transform: translateX(140%) rotate(14deg);
+  opacity: 0;
+  transition: transform 0.34s ease, opacity 0.34s ease;
+}
+.swipe-card.exit-left {
+  transform: translateX(-140%) rotate(-14deg);
+  opacity: 0;
+  transition: transform 0.34s ease, opacity 0.34s ease;
+}
+
+.swipe-question {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 5.6vw, 1.8rem);
+  line-height: 1.28;
+  color: var(--ink);
+}
+.cword {
+  font-weight: 600;
+}
+.cword.verb {
+  color: var(--coral);
+}
+.cword.modifier {
+  color: var(--purple);
+}
+.cword.noun {
+  color: var(--cyan);
+}
+.swipe-tpl {
+  align-self: flex-start;
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.swipe-badge {
+  position: absolute;
+  top: 1rem;
+  padding: 0.3rem 0.7rem;
+  border: 2px solid currentColor;
+  border-radius: 8px;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0;
+  pointer-events: none;
+}
+.swipe-badge--right {
+  right: 1rem;
+  color: var(--go);
+  transform: rotate(8deg);
+}
+.swipe-badge--left {
+  left: 1rem;
+  color: var(--coral);
+  transform: rotate(-8deg);
+}
+
+.curate-controls {
+  display: flex;
+  gap: 0.6rem;
+}
+.curate-controls .btn {
+  flex: 1;
+}
+.btn.vote-yes {
+  background: var(--go);
+  color: #06210f;
+  border-color: transparent;
+}
+.btn.vote-yes:hover {
+  background: var(--go-dim);
+}
+
+.tally {
+  display: flex;
+  justify-content: center;
+  gap: 0.45rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+.tally-yes {
+  color: var(--go);
+}
+.tally-no {
+  color: var(--coral);
+}
+.curate-note {
+  margin: 0;
+  text-align: center;
+  font-size: 0.66rem;
+  line-height: 1.5;
+  color: var(--muted);
 }

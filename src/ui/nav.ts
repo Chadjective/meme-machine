@@ -1,6 +1,6 @@
 import { el } from './dom';
 
-export type Screen = 'play' | 'daily' | 'gallery';
+export type Screen = 'play' | 'daily' | 'curate' | 'gallery';
 
 export interface NavHandle {
   root: HTMLElement;
@@ -10,6 +10,7 @@ export interface NavHandle {
 const TABS: { key: Screen; label: string }[] = [
   { key: 'play', label: 'Play' },
   { key: 'daily', label: 'Daily' },
+  { key: 'curate', label: 'Curate' },
   { key: 'gallery', label: 'Gallery' },
 ];
 

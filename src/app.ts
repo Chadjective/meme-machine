@@ -11,13 +11,16 @@ import { addGalleryEntry } from './gallery';
 import { getDaily, getSavedDaily, getStreak, recordStreak, saveDaily, todayISO } from './daily';
 import { shareTranscript } from './share';
 import { cancelSpeech } from './tts';
+import { hasVoted, incrementSession, recordVote } from './voting';
 import { el } from './ui/dom';
 import { renderNav, type Screen } from './ui/nav';
 import { renderQuestionCard } from './ui/question-card';
 import { renderAnswerInput } from './ui/answer-input';
 import { renderResonanceReveal } from './ui/resonance-reveal';
+import { renderCurateView } from './ui/curate-view';
 import { renderGalleryView } from './ui/gallery-view';
 import { hideWordTooltip } from './ui/tooltip';
+import type { Question } from './lib/types';
 
 export function initApp(): void {
   const root = document.querySelector<HTMLDivElement>('#app');
@@ -43,6 +46,7 @@ export function initApp(): void {
     hideWordTooltip();
     if (next === 'play') renderPlay();
     else if (next === 'daily') renderDaily();
+    else if (next === 'curate') renderCurate();
     else renderGallery();
   }
 
@@ -149,6 +153,35 @@ export function initApp(): void {
     }
 
     mount(wrap, frame);
+  }
+
+  // ── Curate ──────────────────────────────────────────────────────────────
+  // The flywheel only votes on GENERATED questions: seeds are already curated by
+  // hand, and promotion writes the winners back into the seed list.
+  function nextCurateQuestion(): Question {
+    for (let i = 0; i < 40; i++) {
+      const q = generator.next();
+      if (!q.isSeed && !hasVoted(q.text)) return q;
+    }
+    // Everything drawn was a seed or already voted on — serve a generated one
+    // anyway rather than spin.
+    let q = generator.next();
+    for (let i = 0; i < 20 && q.isSeed; i++) q = generator.next();
+    return q;
+  }
+
+  function renderCurate(): void {
+    const wrap = el('div', 'screen');
+    wrap.appendChild(
+      renderCurateView({
+        nextQuestion: nextCurateQuestion,
+        onVote: (question, direction) => {
+          recordVote(question, direction);
+          incrementSession(direction);
+        },
+      })
+    );
+    stage.replaceChildren(wrap);
   }
 
   // ── Gallery ─────────────────────────────────────────────────────────────
