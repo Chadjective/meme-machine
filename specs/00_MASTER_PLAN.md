@@ -38,7 +38,7 @@ culture. Secretly a vocabulary trainer — every word has a real tap-for-definit
 | 4 | Share PNG (transcript/rejection-letter card) | Opus | below |
 | 5 | Daily Seed + gallery + resonance score | Opus | below + 02 §6–7 |
 | 6 | Curation flywheel (votes → seed promotion) | Opus | below |
-| 7 | V2: party mode, personas, Real-or-Generated, misattribution | Fable for content, Opus for build | future |
+| 7 | V2: party mode, personas, Real-or-Generated, misattribution | Fable for content, Opus for build | specced → 03 |
 
 Milestones: **playable** after 3; **shareable** after 4. Never cut corpus quality (1),
 generator quality (2), or the share card (4) — those three decide whether it's funny.
