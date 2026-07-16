@@ -12,6 +12,44 @@
 > `[L#]` questions (and signs off the safety policy); Fable's `[F#]` questions get
 > handed to a Fable session; Opus builds `[O#]` once the above are settled.
 
+## Decisions log (live — Liam)
+
+- **[L14] DECIDED → Fictional + long-dead public-domain figures.** Real living
+  people and all real companies remain hard-cut. Greenlights a dead-figure byline
+  roster (activates **[F13]**) under locked conditions: (i) **[L15]** Fable curates
+  the whitelist, **Liam signs off the sensitivity screen**; (ii) **[S10]**
+  religious/sacred figures excluded regardless of public-domain status; (iii)
+  recently-dead / still-controversial excluded (long-dead only); (iv) **[L18]** an
+  on-pixel "parody / not a real quote" marker on any card bearing a byline; (v)
+  **[L22]** an About/legal + report page ships before misattribution goes live.
+- **[L17] DECIDED → Byline on the machine QUESTION, framed "in the style of" (a
+  hedge).** Never on the user's answer, never a verbatim first-person quote.
+  Resolves **[L2]** (misattribution ships); **[L18]** (on-pixel parody marker) and
+  **[L22]** (About page) remain locked from L14.
+- **[L5] DECIDED → Party = pass-the-phone (one shared device, offline, zero
+  backend).** Live rooms deferred to step-7, gated on challenge-loop usage
+  evidence. Rotating-judge + best-of-N + preset handles per the §2/§4 defaults
+  unless changed later.
+- **[L12] DECIDED → Real-or-Generated axis = "Human-written vs Machine-generated."**
+  Honest framing; the "human" set = Fable originals (no scraping, no real names);
+  the machine side is served from a pre-vetted frozen pool (§4 S2).
+- **[L9] DECIDED → Personas = cosmetic/verdict-only for MVP** (generator untouched,
+  Daily stays persona-neutral). Soft generator re-weight parked as a fast-follow;
+  the question text is never rewritten.
+- **[L21] DECIDED → Yes: audit the shipped corpus + seeds now, add a proper-noun
+  linter to `build-corpus.mjs`** (fails the build on un-allowlisted real-world
+  names). One choke-point covering existing + future content. Activates the linter
+  (**[O1]**), a Fable/Opus flag pass, and a Liam allowlist sign-off.
+- **[L26] DECIDED → Yes: minimal, privacy-preserving, localStorage-first metrics**
+  (no PII, no third-party SDK; optional anonymous aggregates on the votes table).
+  Activates **[O7]**; **[L27]** thresholds still to set.
+- **[L30] DECIDED → No monetization in V2** (audience-building phase); revisit in V3.
+
+_Headliners resolved. The remaining [L#] (L3, L4, L6–L8, L10–L11, L13, L16,
+L19–L20, L23–L25, L27–L29) ride the §2 recommended defaults unless Liam changes
+them; **L19 (age assumption)** and **L27 (per-feature kill thresholds)** still want
+an explicit answer before their features ship._
+
 ## 0. The one-paragraph shape
 
 Treat Stage 7's MVP as a **V2 foundation, not a single feature**. Build the
