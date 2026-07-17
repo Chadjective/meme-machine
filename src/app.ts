@@ -10,7 +10,14 @@ import { incrementQuestionCount, saveAnswer } from './storage';
 import { track } from './metrics';
 import { addGalleryEntry } from './gallery';
 import { getDaily, getSavedDaily, getStreak, recordStreak, saveDaily, todayISO } from './daily';
-import { shareTranscript } from './share';
+import {
+  challengeResonance,
+  challengeUrl,
+  mintChallengeSeed,
+  parseChallengeSeed,
+  questionFromSeed,
+} from './challenge';
+import { shareChallenge, shareTranscript } from './share';
 import { cancelSpeech } from './tts';
 import { hasVoted, incrementSession, recordVote } from './voting';
 import { el } from './ui/dom';
@@ -30,8 +37,14 @@ export function initApp(): void {
 
   const generator = createGenerator(corpus, { mode: 'free' });
 
+  // A ?c=<seed> link drops you straight into that challenge. The seed is the only
+  // thing we ever read out of the URL (spec 03 §4 S1).
+  let challengeSeed: number | null = parseChallengeSeed(location.search);
+  let challengeInvited = challengeSeed !== null;
+  if (challengeInvited) track('challenge_opened');
+
   const header = el('header', 'app-header');
-  let screen: Screen = 'play';
+  let screen: Screen = challengeSeed !== null ? 'challenge' : 'play';
   const nav = renderNav(screen, (next) => go(next));
   // The About page is a standing statement of intent + a report path (spec 03 §4
   // S8) — the on-pixel satire marker points here, so it must stay reachable.
@@ -49,10 +62,23 @@ export function initApp(): void {
     nav.setActive(next);
     cancelSpeech();
     hideWordTooltip();
+    // Leaving a challenge clears ?c= so a reload doesn't drag you back into it.
+    if (next !== 'challenge' && location.search) {
+      history.replaceState(null, '', import.meta.env.BASE_URL);
+    }
     if (next === 'play') renderPlay();
     else if (next === 'daily') renderDaily();
     else if (next === 'curate') renderCurate();
+    else if (next === 'challenge') renderChallenge(challengeSeed ?? mintChallengeSeed(), challengeInvited);
     else renderGallery();
+  }
+
+  /** Mint a fresh challenge and jump to it — the sender answers it too. */
+  function startChallenge(): void {
+    challengeSeed = mintChallengeSeed();
+    challengeInvited = false;
+    history.replaceState(null, '', challengeUrl(challengeSeed, location.origin, import.meta.env.BASE_URL));
+    go('challenge');
   }
 
   function screenFrame(subLabel: string, streakCount?: number): { wrap: HTMLElement; sub: HTMLElement; frame: HTMLElement; slot: HTMLElement } {
@@ -100,6 +126,7 @@ export function initApp(): void {
               resonanceText,
               verdictLine,
               onShare: () => void shareTranscript({ question: question.text, answer, resonanceText, verdictLine }),
+              onChallenge: startChallenge,
               onNext: () => renderPlay(),
               nextLabel: 'Next question',
             })
@@ -166,6 +193,62 @@ export function initApp(): void {
     mount(wrap, frame);
   }
 
+  // ── Challenge ───────────────────────────────────────────────────────────
+  // Both sides derive the same question AND the same resonance from the seed, so
+  // "beat my 87.3%" compares like with like. Nothing is stored server-side; the
+  // link is the entire protocol.
+  function renderChallenge(seed: number, invited: boolean): void {
+    const question = questionFromSeed(corpus, seed);
+    const { resonanceText, verdictLine } = challengeResonance(question, seed);
+    const url = challengeUrl(seed, location.origin, import.meta.env.BASE_URL);
+
+    const { wrap, frame, slot } = screenFrame(invited ? 'YOU’VE BEEN CHALLENGED' : 'CHALLENGE');
+    frame.append(renderQuestionCard(question), slot);
+
+    const sendButton = el('button', 'btn ghost', '⚔ Send this challenge');
+    sendButton.type = 'button';
+    const send = (): void => {
+      track('challenge_sent');
+      void shareChallenge(url, question.text).then((result) => {
+        if (result === 'copied') sendButton.textContent = 'Link copied ✓';
+        else if (result === 'failed') sendButton.textContent = 'Couldn’t share — copy the URL';
+      });
+    };
+    sendButton.addEventListener('click', send);
+
+    slot.appendChild(
+      renderAnswerInput({
+        onSubmit: (text) => {
+          const answer = text.trim();
+          if (!answer) return;
+          track('answer_submitted');
+          saveAnswer(question.text, answer);
+          addGalleryEntry({ question: question.text, answer, resonanceText, verdictLine, mode: 'challenge' });
+          slot.replaceChildren(
+            renderResonanceReveal({
+              resonanceText,
+              verdictLine,
+              onShare: () => void shareTranscript({ question: question.text, answer, resonanceText, verdictLine }),
+              onChallenge: send,
+              challengeLabel: '⚔ Send this challenge',
+              onNext: () => go('play'),
+              nextLabel: 'Free play',
+              footnote: invited
+                ? 'Everyone who opens this link gets this exact question.'
+                : 'Send the link — they get this exact question, scored the same way.',
+            })
+          );
+        },
+      })
+    );
+
+    const sendRow = el('div', 'challenge-send');
+    sendRow.appendChild(sendButton);
+    wrap.appendChild(sendRow);
+
+    mount(wrap, frame);
+  }
+
   // ── Curate ──────────────────────────────────────────────────────────────
   // The flywheel only votes on GENERATED questions: seeds are already curated by
   // hand, and promotion writes the winners back into the seed list.
@@ -213,5 +296,6 @@ export function initApp(): void {
     stage.replaceChildren(wrap);
   }
 
-  go('play');
+  // Not go('play') — a ?c= link must land on its challenge, not the free feed.
+  go(screen);
 }

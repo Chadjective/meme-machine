@@ -8,7 +8,7 @@ export interface GalleryEntry {
   answer: string;
   resonanceText: string;
   verdictLine: string;
-  mode: 'free' | 'daily';
+  mode: 'free' | 'daily' | 'challenge';
   timestamp: string;
 }
 

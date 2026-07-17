@@ -9,6 +9,8 @@ export interface RevealOptions {
   onShare: () => void;
   onNext?: () => void; // omitted for Daily (one question per day)
   nextLabel?: string;
+  onChallenge?: () => void; // "send a friend the same question"
+  challengeLabel?: string;
   footnote?: string; // e.g. streak line, or "come back tomorrow"
 }
 
@@ -26,6 +28,13 @@ export function renderResonanceReveal(opts: RevealOptions): HTMLElement {
   share.type = 'button';
   share.addEventListener('click', opts.onShare);
   row.appendChild(share);
+
+  if (opts.onChallenge) {
+    const challenge = el('button', 'btn ghost', opts.challengeLabel ?? '⚔ Challenge a friend');
+    challenge.type = 'button';
+    challenge.addEventListener('click', opts.onChallenge);
+    row.appendChild(challenge);
+  }
 
   if (opts.onNext) {
     const next = el('button', 'btn ghost', opts.nextLabel ?? 'Next question');

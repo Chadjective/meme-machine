@@ -27,7 +27,31 @@ function buildCaption(data: TranscriptData): string {
   ].join('\n\n');
 }
 
-export type ShareResult = 'shared' | 'downloaded' | 'failed';
+export type ShareResult = 'shared' | 'downloaded' | 'copied' | 'failed';
+
+/**
+ * Share a challenge LINK (not an image). The URL is seed-only by construction
+ * (see challenge.ts) — nothing the sender types ever goes into it.
+ */
+export async function shareChallenge(url: string, questionText: string): Promise<ShareResult> {
+  const text = `Same question, same machine. Beat my score:\n\n"${questionText}"`;
+  const nav = navigator as Navigator & { canShare?: (data: ShareData) => boolean };
+  if (typeof nav.share === 'function') {
+    try {
+      await nav.share({ title: 'Meme Machine', text, url });
+      return 'shared';
+    } catch (err) {
+      if ((err as Error).name === 'AbortError') return 'shared'; // user cancelled
+      // otherwise fall through to clipboard
+    }
+  }
+  try {
+    await navigator.clipboard.writeText(`${text}\n${url}`);
+    return 'copied';
+  } catch {
+    return 'failed';
+  }
+}
 
 /** Render the transcript to a PNG and share it, falling back to download. */
 export async function shareTranscript(data: TranscriptData): Promise<ShareResult> {

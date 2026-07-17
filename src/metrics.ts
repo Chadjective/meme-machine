@@ -23,6 +23,7 @@ export type MetricEvent =
   | 'daily_completed'
   | 'vote_cast'
   | 'share_exported'
+  | 'challenge_sent'
   | 'challenge_opened'
   | 'curate_opened';
 

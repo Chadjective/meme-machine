@@ -1,6 +1,8 @@
 import { el } from './dom';
 
-export type Screen = 'play' | 'daily' | 'curate' | 'gallery';
+// 'challenge' is routable but deliberately not a tab — you arrive via a link or
+// the reveal, not by browsing to it.
+export type Screen = 'play' | 'daily' | 'curate' | 'gallery' | 'challenge';
 
 export interface NavHandle {
   root: HTMLElement;

@@ -549,6 +549,14 @@ button {
   font-size: 0.68rem;
 }
 
+.challenge-send {
+  display: flex;
+  margin-top: 1rem;
+}
+.challenge-send .btn {
+  flex: 1;
+}
+
 .about-link {
   font-family: var(--mono);
   font-size: 0.62rem;
