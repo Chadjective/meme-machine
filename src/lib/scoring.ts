@@ -2,6 +2,7 @@
 // weak factor kills the candidate. Plus the binary validity gates.
 
 import type { Family } from './types';
+import { isFamilyDrawable } from './safety';
 
 export function clamp(x: number, lo: number, hi: number): number {
   return x < lo ? lo : x > hi ? hi : x;
@@ -26,7 +27,7 @@ const M: Record<MatrixFamily, Record<MatrixFamily, number>> = {
 };
 
 export function matrixValue(a: Family, b: Family): number {
-  if (a === 'indigenous' || b === 'indigenous') return 0;
+  if (!isFamilyDrawable(a) || !isFamilyDrawable(b)) return 0; // fenced — see lib/safety.ts
   return M[a as MatrixFamily][b as MatrixFamily];
 }
 
@@ -110,7 +111,7 @@ export function validFill(words: FillWordMeta[], baseAvailable: boolean): { ok: 
   if (!baseAvailable) return { ok: false, reason: 'missing-base' };
   const seen = new Set<string>();
   for (const w of words) {
-    if (w.family === 'indigenous') return { ok: false, reason: 'sensitive' };
+    if (!isFamilyDrawable(w.family)) return { ok: false, reason: 'sensitive' };
     if (w.lemma.length >= 3) {
       if (seen.has(w.lemma)) return { ok: false, reason: 'lemma-dup' };
       seen.add(w.lemma);

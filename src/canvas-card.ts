@@ -3,11 +3,22 @@
 // (Instagram portrait 4:5): Q in Crimson Pro, A in Space Mono, a SEMANTIC
 // RESONANCE % stamp, and a meme-machine footer.
 
+/**
+ * At most ONE attribution source per artifact (spec 03 §4 S6 / [L24]) — a persona
+ * line and a misattribution byline must never stack into a compound fabricated
+ * attribution. Modelling it as a union rather than two optional fields makes that
+ * illegal state unrepresentable instead of merely tested-against.
+ */
+export type Attribution =
+  | { kind: 'persona'; name: string } // "Interviewer: The Burned-Out Founder"
+  | { kind: 'byline'; text: string }; // "— a question in the style of X, probably"
+
 export interface TranscriptData {
   question: string;
   answer: string;
   resonanceText: string; // e.g. "87.3%"
   verdictLine: string;
+  attribution?: Attribution;
 }
 
 const W = 1080;
@@ -99,6 +110,16 @@ function setSpacing(ctx: CanvasRenderingContext2D, value: string): void {
   (ctx as CanvasRenderingContext2D & { letterSpacing?: string }).letterSpacing = value;
 }
 
+/**
+ * The disclaimer, escalating when a name is on the card: an artifact carrying an
+ * attribution has to say *in the pixels* that the quote isn't real. Exported so
+ * the share caption says the same thing as the image.
+ * Placeholder wording — Fable owns the final copy [F14].
+ */
+export function satireMarker(data: Pick<TranscriptData, 'attribution'>): string {
+  return data.attribution ? 'AI-GENERATED SATIRE · NOT A REAL QUOTE' : 'AI-GENERATED SATIRE';
+}
+
 export async function renderTranscriptCard(data: TranscriptData): Promise<Blob> {
   await ensureFonts();
 
@@ -177,8 +198,21 @@ export async function renderTranscriptCard(data: TranscriptData): Promise<Blob> 
   ctx.fillStyle = INK;
   const yAfterQ = drawParagraph(ctx, data.question, PAD, 250, contentW, 68, 5);
 
+  // Attribution (at most one — see the Attribution union). A byline reads as a
+  // hedge on the QUESTION ("in the style of"), never as a quote from the person.
+  let cursor = yAfterQ;
+  if (data.attribution) {
+    ctx.font = `italic 400 30px ${SERIF}`;
+    ctx.fillStyle = MUTED;
+    const line =
+      data.attribution.kind === 'byline'
+        ? data.attribution.text
+        : `Interviewer: ${data.attribution.name}`;
+    cursor = drawParagraph(ctx, line, PAD, cursor + 14, contentW, 38, 2);
+  }
+
   // A block.
-  const aLabelY = yAfterQ + 34;
+  const aLabelY = cursor + 34;
   ctx.font = `700 28px ${MONO}`;
   ctx.fillStyle = CYAN;
   ctx.fillText('A.', PAD, aLabelY);
@@ -238,11 +272,19 @@ export async function renderTranscriptCard(data: TranscriptData): Promise<Blob> 
   ctx.fillStyle = INK;
   drawParagraph(ctx, data.verdictLine, rightX, boxY + 92, rightW, 40, 3);
 
+  // Satire marker — baked into the PIXELS, not the app chrome, because this card
+  // travels without the app and a screenshot loses any framing that lived in the
+  // UI (spec 03 §4 S5). Wording is a placeholder pending Fable [F14].
+  ctx.textAlign = 'center';
+  setSpacing(ctx, '2px');
+  ctx.font = `700 20px ${MONO}`;
+  ctx.fillStyle = 'rgba(233,69,96,0.8)';
+  ctx.fillText(satireMarker(data), W / 2, H - 124);
+
   // Footer.
   setSpacing(ctx, '1px');
   ctx.font = `400 24px ${MONO}`;
   ctx.fillStyle = MUTED;
-  ctx.textAlign = 'center';
   ctx.fillText('meme-machine · chadjective.github.io/meme-machine', W / 2, H - 82);
   ctx.textAlign = 'left';
   setSpacing(ctx, '0px');

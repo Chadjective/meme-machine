@@ -1,7 +1,8 @@
 // Share wrapper (Stage 4) — ported from Meme Streeps share.ts. Web Share API with
 // file support, falling back to a download + clipboard caption on desktop.
 
-import { renderTranscriptCard, type TranscriptData } from './canvas-card';
+import { renderTranscriptCard, satireMarker, type TranscriptData } from './canvas-card';
+import { track } from './metrics';
 
 function triggerDownload(blob: Blob, filename: string): void {
   const url = URL.createObjectURL(blob);
@@ -21,7 +22,8 @@ function buildCaption(data: TranscriptData): string {
     `"${data.question}"`,
     `A: ${answer}`,
     `Semantic Resonance: ${data.resonanceText} — ${data.verdictLine}`,
-    'via meme-machine · chadjective.github.io/meme-machine',
+    // The text travels with the image — it carries the same disclaimer.
+    `${satireMarker(data)} · meme-machine · chadjective.github.io/meme-machine`,
   ].join('\n\n');
 }
 
@@ -35,6 +37,7 @@ export async function shareTranscript(data: TranscriptData): Promise<ShareResult
   } catch {
     return 'failed';
   }
+  track('share_exported');
 
   const filename = `meme-machine-${Date.now()}.png`;
   const file = new File([blob], filename, { type: 'image/png' });

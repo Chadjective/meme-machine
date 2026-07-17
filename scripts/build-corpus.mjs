@@ -5,6 +5,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { lintProperNouns } from './lint-proper-nouns.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const v2 = JSON.parse(readFileSync(join(ROOT, 'data/vocabulary_v2.json'), 'utf8'));
@@ -233,6 +234,22 @@ const corpus = {
   templates,
   mixingGuide: enr.mixingGuide,
 };
+
+// ---------------------------------------------------------------------------
+// Safety gate (spec 03 §4 S7): no real people/brands may enter the corpus.
+// Runs BEFORE the write so a violation can never reach data/corpus_v3.json.
+// ---------------------------------------------------------------------------
+const properNounViolations = lintProperNouns(corpus);
+if (properNounViolations.length) {
+  console.error('\nPROPER-NOUN LINT FAILED — un-allowlisted capitalized names:');
+  for (const v of properNounViolations) console.error(`  ${v.word}  (${v.where})`);
+  console.error(
+    '\nNo real people or brands may enter the corpus (spec 03 §4 S7).\n' +
+      'If this is a legitimate register adjective, add it to ALLOWED_PROPER_NOUNS\n' +
+      'in scripts/lint-proper-nouns.mjs with a justification comment.\n'
+  );
+  process.exit(1);
+}
 
 writeFileSync(join(ROOT, 'data/corpus_v3.json'), JSON.stringify(corpus, null, 2));
 

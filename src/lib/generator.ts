@@ -4,6 +4,7 @@
 import type { Corpus, PoolWord, Question, Register, Template, WordType } from './types';
 import { cryptoSeededRng, dailyRng, pick, randInt, type Rng } from './rng';
 import { ShuffleBag, type StorageLike } from './bags';
+import { isRegisterDrawable } from './safety';
 import { analyzeTemplate, lemmaKey, renderQuestion, type Fill, type TemplateShape } from './grammar';
 import { collision, form, isAlchemyStage, rhythm, score, validFill, type FillWordMeta } from './scoring';
 
@@ -39,7 +40,7 @@ function isoToday(): string {
 function flatten(section: Record<string, Register>, type: WordType): PoolWord[] {
   const out: PoolWord[] = [];
   for (const [register, reg] of Object.entries(section)) {
-    if (reg.sensitive || reg.family === 'indigenous') continue; // spec 02 §4.5
+    if (!isRegisterDrawable(reg)) continue; // the one safety gate — see lib/safety.ts
     for (const entry of reg.entries) out.push({ entry, register, family: reg.family, type });
   }
   return out;

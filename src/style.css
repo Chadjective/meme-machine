@@ -549,6 +549,18 @@ button {
   font-size: 0.68rem;
 }
 
+.about-link {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+}
+.about-link:hover {
+  color: var(--ink);
+}
+
 /* ── Curate (swipe voting) ───────────────────────────────────────────────── */
 .tabs {
   flex-wrap: wrap;

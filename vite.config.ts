@@ -9,10 +9,12 @@ export default defineConfig({
   base: '/meme-machine/',
   build: {
     rollupOptions: {
-      // Multi-page: ship the app shell plus the generator debug/tuning page.
+      // Multi-page: the app shell, the generator debug/tuning page, and the
+      // standing About/legal page the share cards point at.
       input: {
         main: 'index.html',
         debug: 'debug.html',
+        about: 'about.html',
       },
     },
   },

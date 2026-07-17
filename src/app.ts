@@ -1,4 +1,4 @@
-// App controller (Stage 5). A small router over three screens — Play, Daily,
+// App controller. A small router over four screens — Play, Daily, Curate,
 // Gallery — wired to the Stage 2 generator. Each answer reveals a fake "Semantic
 // Resonance" verdict (spec 02 §7) and is saved to the gallery.
 
@@ -7,6 +7,7 @@ import { createGenerator } from './lib/generator';
 import { cryptoSeededRng } from './lib/rng';
 import { formatResonance, resonance, verdict } from './lib/analytics';
 import { incrementQuestionCount, saveAnswer } from './storage';
+import { track } from './metrics';
 import { addGalleryEntry } from './gallery';
 import { getDaily, getSavedDaily, getStreak, recordStreak, saveDaily, todayISO } from './daily';
 import { shareTranscript } from './share';
@@ -32,7 +33,11 @@ export function initApp(): void {
   const header = el('header', 'app-header');
   let screen: Screen = 'play';
   const nav = renderNav(screen, (next) => go(next));
-  header.append(el('div', 'brand', 'MEME MACHINE'), nav.root);
+  // The About page is a standing statement of intent + a report path (spec 03 §4
+  // S8) — the on-pixel satire marker points here, so it must stay reachable.
+  const about = el('a', 'about-link', 'About');
+  about.href = `${import.meta.env.BASE_URL}about.html`;
+  header.append(el('div', 'brand', 'MEME MACHINE'), nav.root, about);
 
   const main = el('main', 'app-main');
   const stage = el('div', 'stage');
@@ -69,6 +74,7 @@ export function initApp(): void {
   // ── Play ────────────────────────────────────────────────────────────────
   function renderPlay(): void {
     const question = generator.next();
+    track('question_shown');
     const count = incrementQuestionCount();
     const rng = cryptoSeededRng();
     const value = resonance(question.score, rng);
@@ -86,6 +92,7 @@ export function initApp(): void {
             renderPlay(); // empty submit behaves like skip
             return;
           }
+          track('answer_submitted');
           saveAnswer(question.text, answer);
           addGalleryEntry({ question: question.text, answer, resonanceText, verdictLine, mode: 'free' });
           slot.replaceChildren(
@@ -98,7 +105,10 @@ export function initApp(): void {
             })
           );
         },
-        onSkip: () => renderPlay(),
+        onSkip: () => {
+          track('question_skipped');
+          renderPlay();
+        },
       })
     );
 
@@ -134,6 +144,7 @@ export function initApp(): void {
           onSubmit: (text) => {
             const answer = text.trim();
             if (!answer) return; // the daily needs an answer to complete
+            track('daily_completed');
             saveAnswer(pack.question.text, answer);
             addGalleryEntry({ question: pack.question.text, answer, resonanceText: pack.resonanceText, verdictLine: pack.verdictLine, mode: 'daily' });
             saveDaily({ date, answer, resonanceText: pack.resonanceText, verdictLine: pack.verdictLine });
@@ -176,6 +187,7 @@ export function initApp(): void {
       renderCurateView({
         nextQuestion: nextCurateQuestion,
         onVote: (question, direction) => {
+          track('vote_cast');
           recordVote(question, direction);
           incrementSession(direction);
         },
